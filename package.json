@@ -1,0 +1,23 @@
+{
+    "name": "layout.css",
+    "version": "1.0.0",
+    "description": "A Flexbox based grid framework for CSS",
+    "main": "build.js",
+    "directories": {
+        "example": "examples"
+    },
+    "scripts": {
+        "build": "node build.js src/layout.css dist/layout.min.css"
+    },
+    "keywords": [
+        "css",
+        "grid",
+        "flex",
+        "flexbox"
+    ],
+    "author": "szivacs",
+    "license": "ISC",
+    "devDependencies": {
+        "csso": "^4.0.3"
+    }
+}

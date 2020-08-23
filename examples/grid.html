@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <!-- <link rel="stylesheet" href="../dist/layout.min.css"> -->
+        <link rel="stylesheet" href="../src/layout.css">
+        <title>Document</title>
+
+        <style>
+            *{
+                font-family: 'Roboto', sans-serif;
+            }
+            .box{
+                background-color: #5E35B1;
+                color: white;
+            }
+            [col]:nth-child(even) .box{
+                background-color: #7E57C2;
+            }
+            hr{
+                margin: 50px 0;
+                border: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div xl:container>
+            <div hide m:show=flex l:hide row=gx1>
+                <div col=p2 m:col=p1><div class="box">left menu</div></div>
+                <div col="w1 p1" m:col="w3 p2"><div class="box">logo</div></div>
+                <div col=p3 m:col=p3><div class="box">right menu</div></div>
+            </div>
+            <hr>
+            <div m:row>
+                <div col><div class="box">col</div></div>
+                <div col><div class="box">col</div></div>
+                <div col><div class="box">col</div></div>
+                <div col><div class="box">col</div></div>
+            </div>
+            <hr>
+            <div row>
+                <div col="w1" m:col=w4><div class="box">col-1</div></div>
+                <div col="w4 p1" m:col=w4><div class="box">col-4</div></div>
+                <div col="w7" m:col=w4><div class="box">col-7</div></div>
+            </div>
+            <h1 xl:hide space=my3 m:space="mt5 mb3" l:reset=space>This is a title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore at non aut saepe vitae neque, dignissimos soluta ea architecto voluptatem molestiae ipsum, corrupti excepturi deleniti eligendi consequatur molestias iste magni?</p>
+            <div row="c3 g1" l:row="g3">
+                <div col><div class="box">col item 1</div></div>
+                <div col><div class="box">col item 2</div></div>
+                <div col><div class="box">col item 3</div></div>
+                <div col=w8><div class="box">col item 4</div></div>
+                <div col><div class="box">col item 5</div></div>
+                <div col><div class="box">col item 6</div></div>
+                <div col><div class="box">col item 7</div></div>
+            </div>
+            <hr>
+            <div row>
+                <div col="r"><p>many items 1</p><p>many items 2</p><p>many items 3</p></div>
+                <div col="r bottom"><p>many items 4</p></div>
+                <div col="r bottom"><p>many items 5</p><p>many items 6</p></div>
+            </div>
+            <hr>
+            <div row>
+                <div col="w2 o2"><div class="box">col-o2</div></div>
+            </div>
+
+            <div row=spaced>
+                <div col="w3"><div class="box">col-3</div></div>
+                <div col="w3"><div class="box">col-3</div></div>
+            </div>
+
+            <hr>
+
+            <div flex="h h-center v-center" l:flex="v h-left" style="height: 200px">
+                <div><div class="box">item 1</div></div>
+                <div><div class="box">item 2</div></div>
+                <div><div class="box">item 3</div></div>
+            </div>
+        </div>
+    </body>
+</html>
