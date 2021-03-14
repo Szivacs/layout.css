@@ -2,274 +2,272 @@
     --gutter-x:0;
     --gutter-y:0;
 }
-[hide], [s\:hide] {display: none}
-[show=""], [s\:show=""] {display: inherit}
-[show~=inline], [s\:show~=inline] {display: inline;}
-[show~=iblock], [s\:show~=iblock] {display: inline-block;}
-[show~=block], [s\:show~=block] {display: block;}
-[show~=flex], [s\:show~=flex] {display: flex;}
+.hide, .s\:hide {display: none}
+.show {display: inherit}
+.inline, .s\:inline {display: inline;}
+.iblock, .s\:iblock {display: inline-block;}
+.block, .s\:block {display: block;}
+.flex, .s\:flex {display: flex;}
 
-[space~=m], [space~=mt], [space~=my], [s\:space~=m], [s\:space~=mt], [s\:space~=my] {margin-top:auto}
-[space~=m0], [space~=mt0], [space~=my0], [s\:space~=m0], [s\:space~=mt0], [s\:space~=my0], [reset~=space], [s\:reset~=space], [reset~=m], [s\:reset~=m], [reset~=mt], [s\:reset~=mt], [reset~=my], [s\:reset~=my] {margin-top:0}
-[space~=m1], [space~=mt1], [space~=my1], [s\:space~=m1], [s\:space~=mt1], [s\:space~=my1] {margin-top:0.25rem}
-[space~=m2], [space~=mt2], [space~=my2], [s\:space~=m2], [s\:space~=mt2], [s\:space~=my2] {margin-top:0.5rem}
-[space~=m3], [space~=mt3], [space~=my3], [s\:space~=m3], [s\:space~=mt3], [s\:space~=my3] {margin-top:1rem}
-[space~=m4], [space~=mt4], [space~=my4], [s\:space~=m4], [s\:space~=mt4], [s\:space~=my4] {margin-top:1.75rem}
-[space~=m5], [space~=mt5], [space~=my5], [s\:space~=m5], [s\:space~=mt5], [s\:space~=my5] {margin-top:3rem}
-[space~=m6], [space~=mt6], [space~=my6], [s\:space~=m6], [s\:space~=mt6], [s\:space~=my6] {margin-top:5rem}
-[space~=m], [space~=mb], [space~=my], [s\:space~=m], [s\:space~=mb], [s\:space~=my] {margin-bottom:auto}
-[space~=m0], [space~=mb0], [space~=my0], [s\:space~=m0], [s\:space~=mb0], [s\:space~=my0], [s\:reset~=space], [reset~=m], [s\:reset~=m], [reset~=mb], [s\:reset~=mb], [reset~=my], [s\:reset~=my] {margin-bottom:0}
-[space~=m1], [space~=mb1], [space~=my1], [s\:space~=m1], [s\:space~=mb1], [s\:space~=my1] {margin-bottom:0.25rem}
-[space~=m2], [space~=mb2], [space~=my2], [s\:space~=m2], [s\:space~=mb2], [s\:space~=my2] {margin-bottom:0.5rem}
-[space~=m3], [space~=mb3], [space~=my3], [s\:space~=m3], [s\:space~=mb3], [s\:space~=my3] {margin-bottom:1rem}
-[space~=m4], [space~=mb4], [space~=my4], [s\:space~=m4], [s\:space~=mb4], [s\:space~=my4] {margin-bottom:1.75rem}
-[space~=m5], [space~=mb5], [space~=my5], [s\:space~=m5], [s\:space~=mb5], [s\:space~=my5] {margin-bottom:3rem}
-[space~=m6], [space~=mb6], [space~=my6], [s\:space~=m6], [s\:space~=mb6], [s\:space~=my6] {margin-bottom:5rem}
-[space~=m], [space~=ml], [space~=mx], [s\:space~=m], [s\:space~=ml], [s\:space~=mx] {margin-left:auto}
-[space~=m0], [space~=ml0], [space~=mx0], [s\:space~=m0], [s\:space~=ml0], [s\:space~=mx0], [s\:reset~=space], [reset~=m], [s\:reset~=m], [reset~=ml], [s\:reset~=ml], [reset~=mx], [s\:reset~=mx] {margin-left:0}
-[space~=m1], [space~=ml1], [space~=mx1], [s\:space~=m1], [s\:space~=ml1], [s\:space~=mx1] {margin-left:0.25rem}
-[space~=m2], [space~=ml2], [space~=mx2], [s\:space~=m2], [s\:space~=ml2], [s\:space~=mx2] {margin-left:0.5rem}
-[space~=m3], [space~=ml3], [space~=mx3], [s\:space~=m3], [s\:space~=ml3], [s\:space~=mx3] {margin-left:1rem}
-[space~=m4], [space~=ml4], [space~=mx4], [s\:space~=m4], [s\:space~=ml4], [s\:space~=mx4] {margin-left:1.75rem}
-[space~=m5], [space~=ml5], [space~=mx5], [s\:space~=m5], [s\:space~=ml5], [s\:space~=mx5] {margin-left:3rem}
-[space~=m6], [space~=ml6], [space~=mx6], [s\:space~=m6], [s\:space~=ml6], [s\:space~=mx6] {margin-left:5rem}
-[space~=m], [space~=mr], [space~=mx], [s\:space~=m], [s\:space~=mr], [s\:space~=mx] {margin-left:auto}
-[space~=m0], [space~=mr0], [space~=mx0], [s\:space~=m0], [s\:space~=mr0], [s\:space~=mx0], [s\:reset~=space], [reset~=m], [s\:reset~=m], [reset~=mr], [s\:reset~=mr], [reset~=mx], [s\:reset~=mx] {margin-right:0}
-[space~=m1], [space~=mr1], [space~=mx1], [s\:space~=m1], [s\:space~=mr1], [s\:space~=mx1] {margin-right:0.25rem}
-[space~=m2], [space~=mr2], [space~=mx2], [s\:space~=m2], [s\:space~=mr2], [s\:space~=mx2] {margin-right:0.5rem}
-[space~=m3], [space~=mr3], [space~=mx3], [s\:space~=m3], [s\:space~=mr3], [s\:space~=mx3] {margin-right:1rem}
-[space~=m4], [space~=mr4], [space~=mx4], [s\:space~=m4], [s\:space~=mr4], [s\:space~=mx4] {margin-right:1.75rem}
-[space~=m5], [space~=mr5], [space~=mx5], [s\:space~=m5], [s\:space~=mr5], [s\:space~=mx5] {margin-right:3rem}
-[space~=m6], [space~=mr6], [space~=mx6], [s\:space~=m6], [s\:space~=mr6], [s\:space~=mx6] {margin-right:5rem}
+.m, .mt, .my, .s\:m, .s\:mt, .s\:my {margin-top:auto}
+.m0, .mt0, .my0, .s\:m0, .s\:mt0, .s\:my0, .reset-space, .s\:reset-space, .reset-m, .s\:reset-m, .reset-mt, .s\:reset-mt, .reset-my, .s\:reset-my {margin-top:0}
+.m1, .mt1, .my1, .s\:m1, .s\:mt1, .s\:my1 {margin-top:0.25rem}
+.m2, .mt2, .my2, .s\:m2, .s\:mt2, .s\:my2 {margin-top:0.5rem}
+.m3, .mt3, .my3, .s\:m3, .s\:mt3, .s\:my3 {margin-top:1rem}
+.m4, .mt4, .my4, .s\:m4, .s\:mt4, .s\:my4 {margin-top:1.75rem}
+.m5, .mt5, .my5, .s\:m5, .s\:mt5, .s\:my5 {margin-top:3rem}
+.m6, .mt6, .my6, .s\:m6, .s\:mt6, .s\:my6 {margin-top:5rem}
+.m, .mb, .my, .s\:m, .s\:mb, .s\:my {margin-bottom:auto}
+.m0, .mb0, .my0, .s\:m0, .s\:mb0, .s\:my0, .s\:reset-space, .reset-m, .s\:reset-m, .reset-mb, .s\:reset-mb, .reset-my, .s\:reset-my {margin-bottom:0}
+.m1, .mb1, .my1, .s\:m1, .s\:mb1, .s\:my1 {margin-bottom:0.25rem}
+.m2, .mb2, .my2, .s\:m2, .s\:mb2, .s\:my2 {margin-bottom:0.5rem}
+.m3, .mb3, .my3, .s\:m3, .s\:mb3, .s\:my3 {margin-bottom:1rem}
+.m4, .mb4, .my4, .s\:m4, .s\:mb4, .s\:my4 {margin-bottom:1.75rem}
+.m5, .mb5, .my5, .s\:m5, .s\:mb5, .s\:my5 {margin-bottom:3rem}
+.m6, .mb6, .my6, .s\:m6, .s\:mb6, .s\:my6 {margin-bottom:5rem}
+.m, .ml, .mx, .s\:m, .s\:ml, .s\:mx {margin-left:auto}
+.m0, .ml0, .mx0, .s\:m0, .s\:ml0, .s\:mx0, .s\:reset-space, .reset-m, .s\:reset-m, .reset-ml, .s\:reset-ml, .reset-mx, .s\:reset-mx {margin-left:0}
+.m1, .ml1, .mx1, .s\:m1, .s\:ml1, .s\:mx1 {margin-left:0.25rem}
+.m2, .ml2, .mx2, .s\:m2, .s\:ml2, .s\:mx2 {margin-left:0.5rem}
+.m3, .ml3, .mx3, .s\:m3, .s\:ml3, .s\:mx3 {margin-left:1rem}
+.m4, .ml4, .mx4, .s\:m4, .s\:ml4, .s\:mx4 {margin-left:1.75rem}
+.m5, .ml5, .mx5, .s\:m5, .s\:ml5, .s\:mx5 {margin-left:3rem}
+.m6, .ml6, .mx6, .s\:m6, .s\:ml6, .s\:mx6 {margin-left:5rem}
+.m, .mr, .mx, .s\:m, .s\:mr, .s\:mx {margin-left:auto}
+.m0, .mr0, .mx0, .s\:m0, .s\:mr0, .s\:mx0, .s\:reset-space, .reset-m, .s\:reset-m, .reset-mr, .s\:reset-mr, .reset-mx, .s\:reset-mx {margin-right:0}
+.m1, .mr1, .mx1, .s\:m1, .s\:mr1, .s\:mx1 {margin-right:0.25rem}
+.m2, .mr2, .mx2, .s\:m2, .s\:mr2, .s\:mx2 {margin-right:0.5rem}
+.m3, .mr3, .mx3, .s\:m3, .s\:mr3, .s\:mx3 {margin-right:1rem}
+.m4, .mr4, .mx4, .s\:m4, .s\:mr4, .s\:mx4 {margin-right:1.75rem}
+.m5, .mr5, .mx5, .s\:m5, .s\:mr5, .s\:mx5 {margin-right:3rem}
+.m6, .mr6, .mx6, .s\:m6, .s\:mr6, .s\:mx6 {margin-right:5rem}
 
-[space~=p0], [space~=pt0], [space~=py0], [s\:space~=p0], [s\:space~=pt0], [s\:space~=py0], [reset~=space], [s\:reset~=space], [reset~=p], [s\:reset~=p], [reset~=pt], [s\:reset~=pt], [reset~=py], [s\:reset~=py] {padding-top:0}
-[space~=p1], [space~=pt1], [space~=py1], [s\:space~=p1], [s\:space~=pt1], [s\:space~=py1] {padding-top:0.25rem}
-[space~=p2], [space~=pt2], [space~=py2], [s\:space~=p2], [s\:space~=pt2], [s\:space~=py2] {padding-top:0.5rem}
-[space~=p3], [space~=pt3], [space~=py3], [s\:space~=p3], [s\:space~=pt3], [s\:space~=py3] {padding-top:1rem}
-[space~=p4], [space~=pt4], [space~=py4], [s\:space~=p4], [s\:space~=pt4], [s\:space~=py4] {padding-top:1.75rem}
-[space~=p5], [space~=pt5], [space~=py5], [s\:space~=p5], [s\:space~=pt5], [s\:space~=py5] {padding-top:3rem}
-[space~=p6], [space~=pt6], [space~=py6], [s\:space~=p6], [s\:space~=pt6], [s\:space~=py6] {padding-top:5rem}
-[space~=p0], [space~=pb0], [space~=py0], [s\:space~=p0], [s\:space~=pb0], [s\:space~=py0], [s\:reset~=space], [reset~=p], [s\:reset~=p], [reset~=pb], [s\:reset~=pb], [reset~=py], [s\:reset~=py] {padding-bottom:0}
-[space~=p1], [space~=pb1], [space~=py1], [s\:space~=p1], [s\:space~=pb1], [s\:space~=py1] {padding-bottom:0.25rem}
-[space~=p2], [space~=pb2], [space~=py2], [s\:space~=p2], [s\:space~=pb2], [s\:space~=py2] {padding-bottom:0.5rem}
-[space~=p3], [space~=pb3], [space~=py3], [s\:space~=p3], [s\:space~=pb3], [s\:space~=py3] {padding-bottom:1rem}
-[space~=p4], [space~=pb4], [space~=py4], [s\:space~=p4], [s\:space~=pb4], [s\:space~=py4] {padding-bottom:1.75rem}
-[space~=p5], [space~=pb5], [space~=py5], [s\:space~=p5], [s\:space~=pb5], [s\:space~=py5] {padding-bottom:3rem}
-[space~=p6], [space~=pb6], [space~=py6], [s\:space~=p6], [s\:space~=pb6], [s\:space~=py6] {padding-bottom:5rem}
-[space~=p0], [space~=pl0], [space~=px0], [s\:space~=p0], [s\:space~=pl0], [s\:space~=px0], [s\:reset~=space], [reset~=p], [s\:reset~=p], [reset~=pl], [s\:reset~=pl], [reset~=px], [s\:reset~=px] {padding-left:0}
-[space~=p1], [space~=pl1], [space~=px1], [s\:space~=p1], [s\:space~=pl1], [s\:space~=px1] {padding-left:0.25rem}
-[space~=p2], [space~=pl2], [space~=px2], [s\:space~=p2], [s\:space~=pl2], [s\:space~=px2] {padding-left:0.5rem}
-[space~=p3], [space~=pl3], [space~=px3], [s\:space~=p3], [s\:space~=pl3], [s\:space~=px3] {padding-left:1rem}
-[space~=p4], [space~=pl4], [space~=px4], [s\:space~=p4], [s\:space~=pl4], [s\:space~=px4] {padding-left:1.75rem}
-[space~=p5], [space~=pl5], [space~=px5], [s\:space~=p5], [s\:space~=pl5], [s\:space~=px5] {padding-left:3rem}
-[space~=p6], [space~=pl6], [space~=px6], [s\:space~=p6], [s\:space~=pl6], [s\:space~=px6] {padding-left:5rem}
-[space~=p0], [space~=pr0], [space~=px0], [s\:space~=p0], [s\:space~=pr0], [s\:space~=px0], [s\:reset~=space], [reset~=p], [s\:reset~=p], [reset~=pr], [s\:reset~=pr], [reset~=px], [s\:reset~=px] {padding-right:0}
-[space~=p1], [space~=pr1], [space~=px1], [s\:space~=p1], [s\:space~=pr1], [s\:space~=px1] {padding-right:0.25rem}
-[space~=p2], [space~=pr2], [space~=px2], [s\:space~=p2], [s\:space~=pr2], [s\:space~=px2] {padding-right:0.5rem}
-[space~=p3], [space~=pr3], [space~=px3], [s\:space~=p3], [s\:space~=pr3], [s\:space~=px3] {padding-right:1rem}
-[space~=p4], [space~=pr4], [space~=px4], [s\:space~=p4], [s\:space~=pr4], [s\:space~=px4] {padding-right:1.75rem}
-[space~=p5], [space~=pr5], [space~=px5], [s\:space~=p5], [s\:space~=pr5], [s\:space~=px5] {padding-right:3rem}
-[space~=p6], [space~=pr6], [space~=px6], [s\:space~=p6], [s\:space~=pr6], [s\:space~=px6] {padding-right:5rem}
+.p0, .pt0, .py0, .s\:p0, .s\:pt0, .s\:py0, .reset-space, .s\:reset-space, .reset-p, .s\:reset-p, .reset-pt, .s\:reset-pt, .reset-py, .s\:reset-py {padding-top:0}
+.p1, .pt1, .py1, .s\:p1, .s\:pt1, .s\:py1 {padding-top:0.25rem}
+.p2, .pt2, .py2, .s\:p2, .s\:pt2, .s\:py2 {padding-top:0.5rem}
+.p3, .pt3, .py3, .s\:p3, .s\:pt3, .s\:py3 {padding-top:1rem}
+.p4, .pt4, .py4, .s\:p4, .s\:pt4, .s\:py4 {padding-top:1.75rem}
+.p5, .pt5, .py5, .s\:p5, .s\:pt5, .s\:py5 {padding-top:3rem}
+.p6, .pt6, .py6, .s\:p6, .s\:pt6, .s\:py6 {padding-top:5rem}
+.p0, .pb0, .py0, .s\:p0, .s\:pb0, .s\:py0, .s\:reset-space, .reset-p, .s\:reset-p, .reset-pb, .s\:reset-pb, .reset-py, .s\:reset-py {padding-bottom:0}
+.p1, .pb1, .py1, .s\:p1, .s\:pb1, .s\:py1 {padding-bottom:0.25rem}
+.p2, .pb2, .py2, .s\:p2, .s\:pb2, .s\:py2 {padding-bottom:0.5rem}
+.p3, .pb3, .py3, .s\:p3, .s\:pb3, .s\:py3 {padding-bottom:1rem}
+.p4, .pb4, .py4, .s\:p4, .s\:pb4, .s\:py4 {padding-bottom:1.75rem}
+.p5, .pb5, .py5, .s\:p5, .s\:pb5, .s\:py5 {padding-bottom:3rem}
+.p6, .pb6, .py6, .s\:p6, .s\:pb6, .s\:py6 {padding-bottom:5rem}
+.p0, .pl0, .px0, .s\:p0, .s\:pl0, .s\:px0, .s\:reset-space, .reset-p, .s\:reset-p, .reset-pl, .s\:reset-pl, .reset-px, .s\:reset-px {padding-left:0}
+.p1, .pl1, .px1, .s\:p1, .s\:pl1, .s\:px1 {padding-left:0.25rem}
+.p2, .pl2, .px2, .s\:p2, .s\:pl2, .s\:px2 {padding-left:0.5rem}
+.p3, .pl3, .px3, .s\:p3, .s\:pl3, .s\:px3 {padding-left:1rem}
+.p4, .pl4, .px4, .s\:p4, .s\:pl4, .s\:px4 {padding-left:1.75rem}
+.p5, .pl5, .px5, .s\:p5, .s\:pl5, .s\:px5 {padding-left:3rem}
+.p6, .pl6, .px6, .s\:p6, .s\:pl6, .s\:px6 {padding-left:5rem}
+.p0, .pr0, .px0, .s\:p0, .s\:pr0, .s\:px0, .s\:reset-space, .reset-p, .s\:reset-p, .reset-pr, .s\:reset-pr, .reset-px, .s\:reset-px {padding-right:0}
+.p1, .pr1, .px1, .s\:p1, .s\:pr1, .s\:px1 {padding-right:0.25rem}
+.p2, .pr2, .px2, .s\:p2, .s\:pr2, .s\:px2 {padding-right:0.5rem}
+.p3, .pr3, .px3, .s\:p3, .s\:pr3, .s\:px3 {padding-right:1rem}
+.p4, .pr4, .px4, .s\:p4, .s\:pr4, .s\:px4 {padding-right:1.75rem}
+.p5, .pr5, .px5, .s\:p5, .s\:pr5, .s\:px5 {padding-right:3rem}
+.p6, .pr6, .px6, .s\:p6, .s\:pr6, .s\:px6 {padding-right:5rem}
 
-[flex], [s\:flex]{display: flex}
-[flex~=h], [s\:flex~=h] {flex-direction: row}
-[flex~=v], [s\:flex~=v] {flex-direction: column}
-[flex~=r], [s\:flex~=r] {flex-direction: row-reverse}
-[flex~=v][flex~=r], [s\:flex~=v][s\:flex~=r] {flex-direction: column-reverse}
+.h, .s\:h {flex-direction: row}
+.v, .s\:v {flex-direction: column}
+.r, .s\:r {flex-direction: row-reverse}
+.v.r, .s\:v.s\:r {flex-direction: column-reverse}
 
-[flex~=h][flex~=h-left], [s\:flex~=h][s\:flex~=h-left],
-[flex~=h][flex~=r][flex~=h-right], [s\:flex~=h][s\:flex~=r][s\:flex~=h-right],
-[flex~=v][flex~=v-top], [s\:flex~=v][s\:flex~=v-top],
-[flex~=v][flex~=r][flex~=v-bottom], [s\:flex~=v][s\:flex~=r][s\:flex~=v-bottom]
+.h.h-left, .s\:h.s\:h-left,
+.h.r.h-right, .s\:h.s\:r.s\:h-right,
+.v.v-top, .s\:v.s\:v-top,
+.v.r.v-bottom, .s\:v.s\:r.s\:v-bottom
 {justify-content: flex-start}
 
-[flex~=h][flex~=h-right], [s\:flex~=h][s\:flex~=h-right],
-[flex~=h][flex~=r][flex~=h-left], [s\:flex~=h][s\:flex~=r][s\:flex~=h-left],
-[flex~=v][flex~=v-bottom], [s\:flex~=v][s\:flex~=v-bottom],
-[flex~=v][flex~=r][flex~=v-top], [s\:flex~=v][s\:flex~=r][s\:flex~=v-top]
+.h.h-right, .s\:h.s\:h-right,
+.h.r.h-left, .s\:h.s\:r.s\:h-left,
+.v.v-bottom, .s\:v.s\:v-bottom,
+.v.r.v-top, .s\:v.s\:r.s\:v-top
 {justify-content: flex-end}
 
-[flex~=h][flex~=h-center], [s\:flex~=h][s\:flex~=h-center],
-[flex~=v][flex~=v-center], [s\:flex~=v][s\:flex~=v-center]
+.h.h-center, .s\:h.s\:h-center,
+.v.v-center, .s\:v.s\:v-center
 {justify-content: center}
 
-[flex~=h][flex~=h-spaced], [s\:flex~=h][s\:flex~=h-spaced],
-[flex~=v][flex~=v-spaced], [s\:flex~=v][s\:flex~=v-spaced]
+.h.h-spaced, .s\:h.s\:h-spaced,
+.v.v-spaced, .s\:v.s\:v-spaced
 {justify-content: space-between}
 
-[flex~=h][flex~=v-top], [s\:flex~=h][s\:flex~=v-top],
-[flex~=h][flex~=r][flex~=v-bottom], [s\:flex~=h][s\:flex~=r][s\:flex~=v-bottom],
-[flex~=v][flex~=h-left], [s\:flex~=v][s\:flex~=h-left],
-[flex~=v][flex~=r][flex~=h-right], [s\:flex~=v][s\:flex~=r][s\:flex~=h-right]
+.h.v-top, .s\:h.s\:v-top,
+.h.r.v-bottom, .s\:h.s\:r.s\:v-bottom,
+.v.h-left, .s\:v.s\:h-left,
+.v.r.h-right, .s\:v.s\:r.s\:h-right
 {align-items: flex-start}
 
-[flex~=h][flex~=v-bottom], [s\:flex~=h][s\:flex~=v-bottom],
-[flex~=h][flex~=r][flex~=v-top], [s\:flex~=h][s\:flex~=r][s\:flex~=v-top],
-[flex~=v][flex~=h-right], [s\:flex~=v][s\:flex~=h-right],
-[flex~=v][flex~=r][flex~=h-left], [s\:flex~=v][s\:flex~=r][s\:flex~=h-left]
+.h.v-bottom, .s\:h.s\:v-bottom,
+.h.r.v-top, .s\:h.s\:r.s\:v-top,
+.v.h-right, .s\:v.s\:h-right,
+.v.r.h-left, .s\:v.s\:r.s\:h-left
 {align-items: flex-end}
 
-[flex~=h][flex~=v-center], [s\:flex~=h][s\:flex~=v-center],
-[flex~=v][flex~=h-center], [s\:flex~=v][s\:flex~=h-center]
+.h.v-center, .s\:h.s\:v-center,
+.v.h-center, .s\:v.s\:h-center
 {align-items: center}
 
-[flex~=h][flex~=v-spaced], [s\:flex~=h][s\:flex~=v-spaced],
-[flex~=v][flex~=h-spaced], [s\:flex~=v][s\:flex~=h-spaced]
+.h.v-spaced, .s\:h.s\:v-spaced,
+.v.h-spaced, .s\:v.s\:h-spaced
 {align-items: stretch}
 
 
-[reset=""], [s\:reset=""], [reset~=row], [s\:reset~=row]{
+.reset, .s\:reset, .reset-row, .s\:reset-row{
     flex-direction: inherit;
     justify-content: inherit;
     align-items: inherit;
 }
-[reset=""], [s\:reset=""], [reset~=row] > [col], [s\:reset~=row] > [col]{
+.reset, .s\:reset, .reset-row > .col, .s\:reset-row > .col{
     width: 100% !important;
     flex-direction: inherit;
     justify-content: inherit;
 }
-[reset=""], [s\:reset=""], [reset~=col], [s\:reset~=col]{
+.reset, .s\:reset, .reset-col, .s\:reset-col{
     width: 100% !important;
     margin-left: inherit;
     order: inherit
 }
 
-[reset=""], [s\:reset=""], [reset~=row], [s\:reset~=row]{
+.reset, .s\:reset, .reset-row, .s\:reset-row{
     --gutter-x: 0;
     --gutter-y: 0;
 }
-[reset=""], [s\:reset=""], [reset~=row], [s\:reset~=row], [reset~=hide], [reset~=show], [s\:reset~=hide], [s\:reset~=show]{display: inherit}
-[reset=""], [s\:reset=""], [reset~=row], [s\:reset~=row], [reset~=], [reset~=row] > [col], [s\:reset~=row] > [col]{flex-direction: inherit}
-[flex~=h][reset~=r], [flex~=h][reset~=r]{flex-direction: row}
-[flex~=v][reset~=r], [flex~=v][reset~=r]{flex-direction: column}
-[reset=""], [s\:reset=""], [reset~=row], [s\:reset~=row], [reset~=], [reset~=row] > [col], [s\:reset~=row] > [col], [reset~=h]{justify-content: inherit}
+.reset, .s\:reset, .reset-row, .s\:reset-row, .reset-hide, .reset-show, .s\:reset-hide, .s\:reset-show{display: inherit}
+.reset, .s\:reset, .reset-row, .s\:reset-row, .reset, .reset-row > .col, .s\:reset-row > .col{flex-direction: inherit}
+.h.reset-h, .h.reset-h{flex-direction: row}
+.v.reset-h, .v.reset-h{flex-direction: column}
+.reset, .s\:reset, .reset-row, .s\:reset-row, .reset, .reset-row > .col, .s\:reset-row > .col, .reset-h{justify-content: inherit}
 
-[reset~=w], [s\:reset~=w]{width: 100% !important}
-[reset~=o], [s\:reset~=o]{margin-left: inherit}
-[reset~=p], [s\:reset~=p]{order: inherit}
-[reset~=g], [s\:reset~=g], [reset~=gx], [s\:reset~=gx]{--gutter-x: 0}
-[reset~=g], [s\:reset~=g], [reset~=gy], [s\:reset~=gy]{--gutter-y: 0}
-[reset~=c] > [col], [s\:reset~=c] > [col]{width: 100% !important}
-[row][reset~=r], [row][s\:reset~=r] {flex-direction: row}
-[col][reset~=r], [col][s\:reset~=r] {flex-direction: column}
+.reset-w, .s\:reset-w{width: 100% !important}
+.reset-o, .s\:reset-o{margin-left: inherit}
+.reset-p, .s\:reset-p{order: inherit}
+.reset-g, .s\:reset-g, .reset-gx, .s\:reset-gx{--gutter-x: 0}
+.reset-g, .s\:reset-g, .reset-gy, .s\:reset-gy{--gutter-y: 0}
+.reset-c > .col, .s\:reset-c > .col{width: 100% !important}
+.row.reset-h, .row.s\:reset-r {flex-direction: row}
+.col.reset-h, .col.s\:reset-r {flex-direction: column}
 
 @media (min-width: 768px){
-    [m\:hide] {display: none}
-    [m\:show=""] {display: inherit}
-    [m\:show~=inline] {display: inline;}
-    [m\:show~=iblock] {display: inline-block;}
-    [m\:show~=block] {display: block;}
-    [m\:show~=flex] {display: flex;}
+    .m\:hide {display: none}
+    .m\:show {display: inherit}
+    .m\:inline {display: inline;}
+    .m\:iblock {display: inline-block;}
+    .m\:block {display: block;}
+    .m\:flex {display: flex;}
 
-    [m\:space~=m], [m\:space~=mt], [m\:space~=my] {margin-top:auto}
-    [m\:space~=m0], [m\:space~=mt0], [m\:space~=my0], [m\:reset~=space], [s\:reset~=space], [m\:reset~=m], [m\:reset~=mt], [m\:reset~=my] {margin-top:0}
-    [m\:space~=m1], [m\:space~=mt1], [m\:space~=my1] {margin-top:0.25rem}
-    [m\:space~=m2], [m\:space~=mt2], [m\:space~=my2] {margin-top:0.5rem}
-    [m\:space~=m3], [m\:space~=mt3], [m\:space~=my3] {margin-top:1rem}
-    [m\:space~=m4], [m\:space~=mt4], [m\:space~=my4] {margin-top:1.75rem}
-    [m\:space~=m5], [m\:space~=mt5], [m\:space~=my5] {margin-top:3rem}
-    [m\:space~=m6], [m\:space~=mt6], [m\:space~=my6] {margin-top:5rem}
-    [m\:space~=m], [m\:space~=mb], [m\:space~=my] {margin-bottom:auto}
-    [m\:space~=m0], [m\:space~=mb0], [m\:space~=my0], [m\:reset~=space], [m\:reset~=m], [m\:reset~=mb], [m\:reset~=my] {margin-bottom:0}
-    [m\:space~=m1], [m\:space~=mb1], [m\:space~=my1] {margin-bottom:0.25rem}
-    [m\:space~=m2], [m\:space~=mb2], [m\:space~=my2] {margin-bottom:0.5rem}
-    [m\:space~=m3], [m\:space~=mb3], [m\:space~=my3] {margin-bottom:1rem}
-    [m\:space~=m4], [m\:space~=mb4], [m\:space~=my4] {margin-bottom:1.75rem}
-    [m\:space~=m5], [m\:space~=mb5], [m\:space~=my5] {margin-bottom:3rem}
-    [m\:space~=m6], [m\:space~=mb6], [m\:space~=my6] {margin-bottom:5rem}
-    [m\:space~=m], [m\:space~=ml], [m\:space~=mx] {margin-left:auto}
-    [m\:space~=m0], [m\:space~=ml0], [m\:space~=mx0], [m\:reset~=space], [m\:reset~=m], [m\:reset~=ml], [m\:reset~=mx] {margin-left:0}
-    [m\:space~=m1], [m\:space~=ml1], [m\:space~=mx1] {margin-left:0.25rem}
-    [m\:space~=m2], [m\:space~=ml2], [m\:space~=mx2] {margin-left:0.5rem}
-    [m\:space~=m3], [m\:space~=ml3], [m\:space~=mx3] {margin-left:1rem}
-    [m\:space~=m4], [m\:space~=ml4], [m\:space~=mx4] {margin-left:1.75rem}
-    [m\:space~=m5], [m\:space~=ml5], [m\:space~=mx5] {margin-left:3rem}
-    [m\:space~=m6], [m\:space~=ml6], [m\:space~=mx6] {margin-left:5rem}
-    [m\:space~=m], [m\:space~=mr], [m\:space~=mx] {margin-right:auto}
-    [m\:space~=m0], [m\:space~=mr0], [m\:space~=mx0], [m\:reset~=space], [m\:reset~=m], [m\:reset~=mr], [m\:reset~=mx] {margin-right:0}
-    [m\:space~=m1], [m\:space~=mr1], [m\:space~=mx1] {margin-right:0.25rem}
-    [m\:space~=m2], [m\:space~=mr2], [m\:space~=mx2] {margin-right:0.5rem}
-    [m\:space~=m3], [m\:space~=mr3], [m\:space~=mx3] {margin-right:1rem}
-    [m\:space~=m4], [m\:space~=mr4], [m\:space~=mx4] {margin-right:1.75rem}
-    [m\:space~=m5], [m\:space~=mr5], [m\:space~=mx5] {margin-right:3rem}
-    [m\:space~=m6], [m\:space~=mr6], [m\:space~=mx6] {margin-right:5rem}
+    .m\:m, .m\:mt, .m\:my {margin-top:auto}
+    .m\:m0, .m\:mt0, .m\:my0, .m\:reset-space, .s\:reset-space, .m\:reset-m, .m\:reset-mt, .m\:reset-my {margin-top:0}
+    .m\:m1, .m\:mt1, .m\:my1 {margin-top:0.25rem}
+    .m\:m2, .m\:mt2, .m\:my2 {margin-top:0.5rem}
+    .m\:m3, .m\:mt3, .m\:my3 {margin-top:1rem}
+    .m\:m4, .m\:mt4, .m\:my4 {margin-top:1.75rem}
+    .m\:m5, .m\:mt5, .m\:my5 {margin-top:3rem}
+    .m\:m6, .m\:mt6, .m\:my6 {margin-top:5rem}
+    .m\:m, .m\:mb, .m\:my {margin-bottom:auto}
+    .m\:m0, .m\:mb0, .m\:my0, .m\:reset-space, .m\:reset-m, .m\:reset-mb, .m\:reset-my {margin-bottom:0}
+    .m\:m1, .m\:mb1, .m\:my1 {margin-bottom:0.25rem}
+    .m\:m2, .m\:mb2, .m\:my2 {margin-bottom:0.5rem}
+    .m\:m3, .m\:mb3, .m\:my3 {margin-bottom:1rem}
+    .m\:m4, .m\:mb4, .m\:my4 {margin-bottom:1.75rem}
+    .m\:m5, .m\:mb5, .m\:my5 {margin-bottom:3rem}
+    .m\:m6, .m\:mb6, .m\:my6 {margin-bottom:5rem}
+    .m\:m, .m\:ml, .m\:mx {margin-left:auto}
+    .m\:m0, .m\:ml0, .m\:mx0, .m\:reset-space, .m\:reset-m, .m\:reset-ml, .m\:reset-mx {margin-left:0}
+    .m\:m1, .m\:ml1, .m\:mx1 {margin-left:0.25rem}
+    .m\:m2, .m\:ml2, .m\:mx2 {margin-left:0.5rem}
+    .m\:m3, .m\:ml3, .m\:mx3 {margin-left:1rem}
+    .m\:m4, .m\:ml4, .m\:mx4 {margin-left:1.75rem}
+    .m\:m5, .m\:ml5, .m\:mx5 {margin-left:3rem}
+    .m\:m6, .m\:ml6, .m\:mx6 {margin-left:5rem}
+    .m\:m, .m\:mr, .m\:mx {margin-right:auto}
+    .m\:m0, .m\:mr0, .m\:mx0, .m\:reset-space, .m\:reset-m, .m\:reset-mr, .m\:reset-mx {margin-right:0}
+    .m\:m1, .m\:mr1, .m\:mx1 {margin-right:0.25rem}
+    .m\:m2, .m\:mr2, .m\:mx2 {margin-right:0.5rem}
+    .m\:m3, .m\:mr3, .m\:mx3 {margin-right:1rem}
+    .m\:m4, .m\:mr4, .m\:mx4 {margin-right:1.75rem}
+    .m\:m5, .m\:mr5, .m\:mx5 {margin-right:3rem}
+    .m\:m6, .m\:mr6, .m\:mx6 {margin-right:5rem}
 
-    [m\:space~=p0], [m\:space~=pt0], [m\:space~=py0], [m\:reset~=space], [m\:reset~=p], [m\:reset~=pt], [m\:reset~=py] {padding-top:0}
-    [m\:space~=p1], [m\:space~=pt1], [m\:space~=py1] {padding-top:0.25rem}
-    [m\:space~=p2], [m\:space~=pt2], [m\:space~=py2] {padding-top:0.5rem}
-    [m\:space~=p3], [m\:space~=pt3], [m\:space~=py3] {padding-top:1rem}
-    [m\:space~=p4], [m\:space~=pt4], [m\:space~=py4] {padding-top:1.75rem}
-    [m\:space~=p5], [m\:space~=pt5], [m\:space~=py5] {padding-top:3rem}
-    [m\:space~=p6], [m\:space~=pt6], [m\:space~=py6] {padding-top:5rem}
-    [m\:space~=p0], [m\:space~=pb0], [m\:space~=py0], [m\:reset~=space], [m\:reset~=p], [m\:reset~=pb], [m\:reset~=py] {padding-bottom:0}
-    [m\:space~=p1], [m\:space~=pb1], [m\:space~=py1] {padding-bottom:0.25rem}
-    [m\:space~=p2], [m\:space~=pb2], [m\:space~=py2] {padding-bottom:0.5rem}
-    [m\:space~=p3], [m\:space~=pb3], [m\:space~=py3] {padding-bottom:1rem}
-    [m\:space~=p4], [m\:space~=pb4], [m\:space~=py4] {padding-bottom:1.75rem}
-    [m\:space~=p5], [m\:space~=pb5], [m\:space~=py5] {padding-bottom:3rem}
-    [m\:space~=p6], [m\:space~=pb6], [m\:space~=py6] {padding-bottom:5rem}
-    [m\:space~=p0], [m\:space~=pl0], [m\:space~=px0], [m\:reset~=space], [m\:reset~=p], [m\:reset~=pl], [m\:reset~=px] {padding-left:0}
-    [m\:space~=p1], [m\:space~=pl1], [m\:space~=px1] {padding-left:0.25rem}
-    [m\:space~=p2], [m\:space~=pl2], [m\:space~=px2] {padding-left:0.5rem}
-    [m\:space~=p3], [m\:space~=pl3], [m\:space~=px3] {padding-left:1rem}
-    [m\:space~=p4], [m\:space~=pl4], [m\:space~=px4] {padding-left:1.75rem}
-    [m\:space~=p5], [m\:space~=pl5], [m\:space~=px5] {padding-left:3rem}
-    [m\:space~=p6], [m\:space~=pl6], [m\:space~=px6] {padding-left:5rem}
-    [m\:space~=p0], [m\:space~=pr0], [m\:space~=px0], [m\:reset~=space], [m\:reset~=p], [m\:reset~=pr], [m\:reset~=px] {padding-right:0}
-    [m\:space~=p1], [m\:space~=pr1], [m\:space~=px1] {padding-right:0.25rem}
-    [m\:space~=p2], [m\:space~=pr2], [m\:space~=px2] {padding-right:0.5rem}
-    [m\:space~=p3], [m\:space~=pr3], [m\:space~=px3] {padding-right:1rem}
-    [m\:space~=p4], [m\:space~=pr4], [m\:space~=px4] {padding-right:1.75rem}
-    [m\:space~=p5], [m\:space~=pr5], [m\:space~=px5] {padding-right:3rem}
-    [m\:space~=p6], [m\:space~=pr6], [m\:space~=px6] {padding-right:5rem}
+    .m\:p0, .m\:pt0, .m\:py0, .m\:reset-space, .m\:reset-p, .m\:reset-pt, .m\:reset-py {padding-top:0}
+    .m\:p1, .m\:pt1, .m\:py1 {padding-top:0.25rem}
+    .m\:p2, .m\:pt2, .m\:py2 {padding-top:0.5rem}
+    .m\:p3, .m\:pt3, .m\:py3 {padding-top:1rem}
+    .m\:p4, .m\:pt4, .m\:py4 {padding-top:1.75rem}
+    .m\:p5, .m\:pt5, .m\:py5 {padding-top:3rem}
+    .m\:p6, .m\:pt6, .m\:py6 {padding-top:5rem}
+    .m\:p0, .m\:pb0, .m\:py0, .m\:reset-space, .m\:reset-p, .m\:reset-pb, .m\:reset-py {padding-bottom:0}
+    .m\:p1, .m\:pb1, .m\:py1 {padding-bottom:0.25rem}
+    .m\:p2, .m\:pb2, .m\:py2 {padding-bottom:0.5rem}
+    .m\:p3, .m\:pb3, .m\:py3 {padding-bottom:1rem}
+    .m\:p4, .m\:pb4, .m\:py4 {padding-bottom:1.75rem}
+    .m\:p5, .m\:pb5, .m\:py5 {padding-bottom:3rem}
+    .m\:p6, .m\:pb6, .m\:py6 {padding-bottom:5rem}
+    .m\:p0, .m\:pl0, .m\:px0, .m\:reset-space, .m\:reset-p, .m\:reset-pl, .m\:reset-px {padding-left:0}
+    .m\:p1, .m\:pl1, .m\:px1 {padding-left:0.25rem}
+    .m\:p2, .m\:pl2, .m\:px2 {padding-left:0.5rem}
+    .m\:p3, .m\:pl3, .m\:px3 {padding-left:1rem}
+    .m\:p4, .m\:pl4, .m\:px4 {padding-left:1.75rem}
+    .m\:p5, .m\:pl5, .m\:px5 {padding-left:3rem}
+    .m\:p6, .m\:pl6, .m\:px6 {padding-left:5rem}
+    .m\:p0, .m\:pr0, .m\:px0, .m\:reset-space, .m\:reset-p, .m\:reset-pr, .m\:reset-px {padding-right:0}
+    .m\:p1, .m\:pr1, .m\:px1 {padding-right:0.25rem}
+    .m\:p2, .m\:pr2, .m\:px2 {padding-right:0.5rem}
+    .m\:p3, .m\:pr3, .m\:px3 {padding-right:1rem}
+    .m\:p4, .m\:pr4, .m\:px4 {padding-right:1.75rem}
+    .m\:p5, .m\:pr5, .m\:px5 {padding-right:3rem}
+    .m\:p6, .m\:pr6, .m\:px6 {padding-right:5rem}
 
-    [m\:flex]{display: flex}
-    [m\:flex~=h] {flex-direction: row}
-    [m\:flex~=v] {flex-direction: column}
-    [m\:flex~=r] {flex-direction: row-reverse}
-    [m\:flex~=v][m\:flex~=r] {flex-direction: column-reverse}
+    .m\:h {flex-direction: row}
+    .m\:v {flex-direction: column}
+    .m\:r {flex-direction: row-reverse}
+    .m\:v.m\:r {flex-direction: column-reverse}
 
-    [m\:flex~=h][m\:flex~=h-left],
-    [m\:flex~=h][m\:flex~=r][m\:flex~=h-right],
-    [m\:flex~=v][m\:flex~=v-top],
-    [m\:flex~=v][m\:flex~=r][m\:flex~=v-bottom]
+    .m\:h.m\:h-left,
+    .m\:h.m\:r.m\:h-right,
+    .m\:v.m\:v-top,
+    .m\:v.m\:r.m\:v-bottom
     {justify-content: flex-start}
 
-    [m\:flex~=h][m\:flex~=h-right],
-    [m\:flex~=h][m\:flex~=r][m\:flex~=h-left],
-    [m\:flex~=v][m\:flex~=v-bottom],
-    [m\:flex~=v][m\:flex~=r][m\:flex~=v-top]
+    .m\:h.m\:h-right,
+    .m\:h.m\:r.m\:h-left,
+    .m\:v.m\:v-bottom,
+    .m\:v.m\:r.m\:v-top
     {justify-content: flex-end}
 
-    [m\:flex~=h][m\:flex~=h-center],
-    [m\:flex~=v][m\:flex~=v-center]
+    .m\:h.m\:h-center,
+    .m\:v.m\:v-center
     {justify-content: center}
 
-    [m\:flex~=h][m\:flex~=h-spaced],
-    [m\:flex~=v][m\:flex~=v-spaced]
+    .m\:h.m\:h-spaced,
+    .m\:v.m\:v-spaced
     {justify-content: space-between}
 
-    [m\:flex~=h][m\:flex~=v-top],
-    [m\:flex~=h][m\:flex~=r][m\:flex~=v-bottom],
-    [m\:flex~=v][m\:flex~=h-left],
-    [m\:flex~=v][m\:flex~=r][m\:flex~=h-right]
+    .m\:h.m\:v-top,
+    .m\:h.m\:r.m\:v-bottom,
+    .m\:v.m\:h-left,
+    .m\:v.m\:r.m\:h-right
     {align-items: flex-start}
 
-    [m\:flex~=h][m\:flex~=v-bottom],
-    [m\:flex~=h][m\:flex~=r][m\:flex~=v-top],
-    [m\:flex~=v][m\:flex~=h-right],
-    [m\:flex~=v][m\:flex~=r][m\:flex~=h-left]
+    .m\:h.m\:v-bottom,
+    .m\:h.m\:r.m\:v-top,
+    .m\:v.m\:h-right,
+    .m\:v.m\:r.m\:h-left
     {align-items: flex-end}
 
-    [m\:flex~=h][m\:flex~=v-center],
-    [m\:flex~=v][m\:flex~=h-center]
+    .m\:h.m\:v-center,
+    .m\:v.m\:h-center
     {align-items: center}
 
-    [m\:flex~=h][m\:flex~=v-spaced],
-    [m\:flex~=v][m\:flex~=h-spaced]
+    .m\:h.m\:v-spaced,
+    .m\:v.m\:h-spaced
     {align-items: stretch}
 
-    [m\:reset=""], [m\:reset~=row]{
+    .m\:reset, .m\:reset-row {
         --gutter-x: 0;
         --gutter-y: 0;
         display: inherit;
@@ -277,143 +275,142 @@
         justify-content: inherit;
         align-items: inherit;
     }
-    [m\:reset=""], [m\:reset~=row] > [col]{
+    .m\:reset, .m\:reset-row > .col{
         width: 100% !important;
         flex-direction: inherit;
         justify-content: inherit;
     }
-    [m\:reset=""], [m\:reset~=col]{
+    .m\:reset, .m\:reset-col{
         width: 100% !important;
         margin-left: inherit;
         order: inherit
     }
     
-    [m\:reset~=w]{width: 100% !important}
-    [m\:reset~=o]{margin-left: inherit}
-    [m\:reset~=p]{order: inherit}
-    [m\:reset~=g], [reset~=gx], [s\:reset~=gx]{--gutter-x: 0}
-    [m\:reset~=g], [reset~=gy], [s\:reset~=gy]{--gutter-y: 0}
-    [m\:reset~=c] > [col]{width: 100% !important}
-    [row][m\:reset~=r] {flex-direction: row}
-    [col][m\:reset~=r] {flex-direction: column}
+    .m\:reset-w{width: 100% !important}
+    .m\:reset-o{margin-left: inherit}
+    .m\:reset-p{order: inherit}
+    .m\:reset-g, .reset-gx, .s\:reset-gx{--gutter-x: 0}
+    .m\:reset-g, .reset-gy, .s\:reset-gy{--gutter-y: 0}
+    .m\:reset-c > .col{width: 100% !important}
+    .row.m\:reset-r {flex-direction: row}
+    .col.m\:reset-r {flex-direction: column}
 }
 @media (min-width: 992px){
-    [l\:hide] {display: none}
-    [l\:show=""] {display: inherit}
-    [l\:show~=inline] {display: inline;}
-    [l\:show~=iblock] {display: inline-block;}
-    [l\:show~=block] {display: block;}
-    [l\:show~=flex] {display: flex;}
+    .l\:hide {display: none}
+    .l\:show {display: inherit}
+    .l\:inline {display: inline;}
+    .l\:iblock {display: inline-block;}
+    .l\:block {display: block;}
+    .l\:flex {display: flex;}
 
-    [l\:space~=m], [l\:space~=mt], [l\:space~=my] {margin-top:auto}
-    [l\:space~=m0], [l\:space~=mt0], [l\:space~=my0], [l\:reset~=space], [l\:reset~=m], [l\:reset~=mt], [l\:reset~=my] {margin-top:0}
-    [l\:space~=m1], [l\:space~=mt1], [l\:space~=my1] {margin-top:0.25rem}
-    [l\:space~=m2], [l\:space~=mt2], [l\:space~=my2] {margin-top:0.5rem}
-    [l\:space~=m3], [l\:space~=mt3], [l\:space~=my3] {margin-top:1rem}
-    [l\:space~=m4], [l\:space~=mt4], [l\:space~=my4] {margin-top:1.75rem}
-    [l\:space~=m5], [l\:space~=mt5], [l\:space~=my5] {margin-top:3rem}
-    [l\:space~=m6], [l\:space~=mt6], [l\:space~=my6] {margin-top:5rem}
-    [l\:space~=m], [l\:space~=mb], [l\:space~=my] {margin-bottom:auto}
-    [l\:space~=m0], [l\:space~=mb0], [l\:space~=my0], [l\:reset~=space], [l\:reset~=m], [l\:reset~=mb], [l\:reset~=my] {margin-bottom:0}
-    [l\:space~=m1], [l\:space~=mb1], [l\:space~=my1] {margin-bottom:0.25rem}
-    [l\:space~=m2], [l\:space~=mb2], [l\:space~=my2] {margin-bottom:0.5rem}
-    [l\:space~=m3], [l\:space~=mb3], [l\:space~=my3] {margin-bottom:1rem}
-    [l\:space~=m4], [l\:space~=mb4], [l\:space~=my4] {margin-bottom:1.75rem}
-    [l\:space~=m5], [l\:space~=mb5], [l\:space~=my5] {margin-bottom:3rem}
-    [l\:space~=m6], [l\:space~=mb6], [l\:space~=my6] {margin-bottom:5rem}
-    [l\:space~=m], [l\:space~=ml], [l\:space~=mx] {margin-left:auto}
-    [l\:space~=m0], [l\:space~=ml0], [l\:space~=mx0], [l\:reset~=space], [l\:reset~=m], [l\:reset~=ml], [l\:reset~=mx] {margin-left:0}
-    [l\:space~=m1], [l\:space~=ml1], [l\:space~=mx1] {margin-left:0.25rem}
-    [l\:space~=m2], [l\:space~=ml2], [l\:space~=mx2] {margin-left:0.5rem}
-    [l\:space~=m3], [l\:space~=ml3], [l\:space~=mx3] {margin-left:1rem}
-    [l\:space~=m4], [l\:space~=ml4], [l\:space~=mx4] {margin-left:1.75rem}
-    [l\:space~=m5], [l\:space~=ml5], [l\:space~=mx5] {margin-left:3rem}
-    [l\:space~=m6], [l\:space~=ml6], [l\:space~=mx6] {margin-left:5rem}
-    [l\:space~=m], [l\:space~=mr], [l\:space~=mx] {margin-right:auto}
-    [l\:space~=m0], [l\:space~=mr0], [l\:space~=mx0], [l\:reset~=space], [l\:reset~=m], [l\:reset~=mr], [l\:reset~=mx] {margin-right:0}
-    [l\:space~=m1], [l\:space~=mr1], [l\:space~=mx1] {margin-right:0.25rem}
-    [l\:space~=m2], [l\:space~=mr2], [l\:space~=mx2] {margin-right:0.5rem}
-    [l\:space~=m3], [l\:space~=mr3], [l\:space~=mx3] {margin-right:1rem}
-    [l\:space~=m4], [l\:space~=mr4], [l\:space~=mx4] {margin-right:1.75rem}
-    [l\:space~=m5], [l\:space~=mr5], [l\:space~=mx5] {margin-right:3rem}
-    [l\:space~=m6], [l\:space~=mr6], [l\:space~=mx6] {margin-right:5rem}
+    .l\:m, .l\:mt, .l\:my {margin-top:auto}
+    .l\:m0, .l\:mt0, .l\:my0, .l\:reset-space, .l\:reset-m, .l\:reset-mt, .l\:reset-my {margin-top:0}
+    .l\:m1, .l\:mt1, .l\:my1 {margin-top:0.25rem}
+    .l\:m2, .l\:mt2, .l\:my2 {margin-top:0.5rem}
+    .l\:m3, .l\:mt3, .l\:my3 {margin-top:1rem}
+    .l\:m4, .l\:mt4, .l\:my4 {margin-top:1.75rem}
+    .l\:m5, .l\:mt5, .l\:my5 {margin-top:3rem}
+    .l\:m6, .l\:mt6, .l\:my6 {margin-top:5rem}
+    .l\:m, .l\:mb, .l\:my {margin-bottom:auto}
+    .l\:m0, .l\:mb0, .l\:my0, .l\:reset-space, .l\:reset-m, .l\:reset-mb, .l\:reset-my {margin-bottom:0}
+    .l\:m1, .l\:mb1, .l\:my1 {margin-bottom:0.25rem}
+    .l\:m2, .l\:mb2, .l\:my2 {margin-bottom:0.5rem}
+    .l\:m3, .l\:mb3, .l\:my3 {margin-bottom:1rem}
+    .l\:m4, .l\:mb4, .l\:my4 {margin-bottom:1.75rem}
+    .l\:m5, .l\:mb5, .l\:my5 {margin-bottom:3rem}
+    .l\:m6, .l\:mb6, .l\:my6 {margin-bottom:5rem}
+    .l\:m, .l\:ml, .l\:mx {margin-left:auto}
+    .l\:m0, .l\:ml0, .l\:mx0, .l\:reset-space, .l\:reset-m, .l\:reset-ml, .l\:reset-mx {margin-left:0}
+    .l\:m1, .l\:ml1, .l\:mx1 {margin-left:0.25rem}
+    .l\:m2, .l\:ml2, .l\:mx2 {margin-left:0.5rem}
+    .l\:m3, .l\:ml3, .l\:mx3 {margin-left:1rem}
+    .l\:m4, .l\:ml4, .l\:mx4 {margin-left:1.75rem}
+    .l\:m5, .l\:ml5, .l\:mx5 {margin-left:3rem}
+    .l\:m6, .l\:ml6, .l\:mx6 {margin-left:5rem}
+    .l\:m, .l\:mr, .l\:mx {margin-right:auto}
+    .l\:m0, .l\:mr0, .l\:mx0, .l\:reset-space, .l\:reset-m, .l\:reset-mr, .l\:reset-mx {margin-right:0}
+    .l\:m1, .l\:mr1, .l\:mx1 {margin-right:0.25rem}
+    .l\:m2, .l\:mr2, .l\:mx2 {margin-right:0.5rem}
+    .l\:m3, .l\:mr3, .l\:mx3 {margin-right:1rem}
+    .l\:m4, .l\:mr4, .l\:mx4 {margin-right:1.75rem}
+    .l\:m5, .l\:mr5, .l\:mx5 {margin-right:3rem}
+    .l\:m6, .l\:mr6, .l\:mx6 {margin-right:5rem}
 
-    [l\:space~=p0], [l\:space~=pt0], [l\:space~=py0], [l\:reset~=space], [l\:reset~=p], [l\:reset~=pt], [l\:reset~=py] {padding-top:0}
-    [l\:space~=p1], [l\:space~=pt1], [l\:space~=py1] {padding-top:0.25rem}
-    [l\:space~=p2], [l\:space~=pt2], [l\:space~=py2] {padding-top:0.5rem}
-    [l\:space~=p3], [l\:space~=pt3], [l\:space~=py3] {padding-top:1rem}
-    [l\:space~=p4], [l\:space~=pt4], [l\:space~=py4] {padding-top:1.75rem}
-    [l\:space~=p5], [l\:space~=pt5], [l\:space~=py5] {padding-top:3rem}
-    [l\:space~=p6], [l\:space~=pt6], [l\:space~=py6] {padding-top:5rem}
-    [l\:space~=p0], [l\:space~=pb0], [l\:space~=py0], [l\:reset~=space], [l\:reset~=p], [l\:reset~=pb], [l\:reset~=py] {padding-bottom:0}
-    [l\:space~=p1], [l\:space~=pb1], [l\:space~=py1] {padding-bottom:0.25rem}
-    [l\:space~=p2], [l\:space~=pb2], [l\:space~=py2] {padding-bottom:0.5rem}
-    [l\:space~=p3], [l\:space~=pb3], [l\:space~=py3] {padding-bottom:1rem}
-    [l\:space~=p4], [l\:space~=pb4], [l\:space~=py4] {padding-bottom:1.75rem}
-    [l\:space~=p5], [l\:space~=pb5], [l\:space~=py5] {padding-bottom:3rem}
-    [l\:space~=p6], [l\:space~=pb6], [l\:space~=py6] {padding-bottom:5rem}
-    [l\:space~=p0], [l\:space~=pl0], [l\:space~=px0], [l\:reset~=space], [l\:reset~=p], [l\:reset~=pl], [l\:reset~=px] {padding-left:0}
-    [l\:space~=p1], [l\:space~=pl1], [l\:space~=px1] {padding-left:0.25rem}
-    [l\:space~=p2], [l\:space~=pl2], [l\:space~=px2] {padding-left:0.5rem}
-    [l\:space~=p3], [l\:space~=pl3], [l\:space~=px3] {padding-left:1rem}
-    [l\:space~=p4], [l\:space~=pl4], [l\:space~=px4] {padding-left:1.75rem}
-    [l\:space~=p5], [l\:space~=pl5], [l\:space~=px5] {padding-left:3rem}
-    [l\:space~=p6], [l\:space~=pl6], [l\:space~=px6] {padding-left:5rem}
-    [l\:space~=p0], [l\:space~=pr0], [l\:space~=px0], [l\:reset~=space], [l\:reset~=p], [l\:reset~=pr], [l\:reset~=px] {padding-right:0}
-    [l\:space~=p1], [l\:space~=pr1], [l\:space~=px1] {padding-right:0.25rem}
-    [l\:space~=p2], [l\:space~=pr2], [l\:space~=px2] {padding-right:0.5rem}
-    [l\:space~=p3], [l\:space~=pr3], [l\:space~=px3] {padding-right:1rem}
-    [l\:space~=p4], [l\:space~=pr4], [l\:space~=px4] {padding-right:1.75rem}
-    [l\:space~=p5], [l\:space~=pr5], [l\:space~=px5] {padding-right:3rem}
-    [l\:space~=p6], [l\:space~=pr6], [l\:space~=px6] {padding-right:5rem}
+    .l\:p0, .l\:pt0, .l\:py0, .l\:reset-space, .l\:reset-p, .l\:reset-pt, .l\:reset-py {padding-top:0}
+    .l\:p1, .l\:pt1, .l\:py1 {padding-top:0.25rem}
+    .l\:p2, .l\:pt2, .l\:py2 {padding-top:0.5rem}
+    .l\:p3, .l\:pt3, .l\:py3 {padding-top:1rem}
+    .l\:p4, .l\:pt4, .l\:py4 {padding-top:1.75rem}
+    .l\:p5, .l\:pt5, .l\:py5 {padding-top:3rem}
+    .l\:p6, .l\:pt6, .l\:py6 {padding-top:5rem}
+    .l\:p0, .l\:pb0, .l\:py0, .l\:reset-space, .l\:reset-p, .l\:reset-pb, .l\:reset-py {padding-bottom:0}
+    .l\:p1, .l\:pb1, .l\:py1 {padding-bottom:0.25rem}
+    .l\:p2, .l\:pb2, .l\:py2 {padding-bottom:0.5rem}
+    .l\:p3, .l\:pb3, .l\:py3 {padding-bottom:1rem}
+    .l\:p4, .l\:pb4, .l\:py4 {padding-bottom:1.75rem}
+    .l\:p5, .l\:pb5, .l\:py5 {padding-bottom:3rem}
+    .l\:p6, .l\:pb6, .l\:py6 {padding-bottom:5rem}
+    .l\:p0, .l\:pl0, .l\:px0, .l\:reset-space, .l\:reset-p, .l\:reset-pl, .l\:reset-px {padding-left:0}
+    .l\:p1, .l\:pl1, .l\:px1 {padding-left:0.25rem}
+    .l\:p2, .l\:pl2, .l\:px2 {padding-left:0.5rem}
+    .l\:p3, .l\:pl3, .l\:px3 {padding-left:1rem}
+    .l\:p4, .l\:pl4, .l\:px4 {padding-left:1.75rem}
+    .l\:p5, .l\:pl5, .l\:px5 {padding-left:3rem}
+    .l\:p6, .l\:pl6, .l\:px6 {padding-left:5rem}
+    .l\:p0, .l\:pr0, .l\:px0, .l\:reset-space, .l\:reset-p, .l\:reset-pr, .l\:reset-px {padding-right:0}
+    .l\:p1, .l\:pr1, .l\:px1 {padding-right:0.25rem}
+    .l\:p2, .l\:pr2, .l\:px2 {padding-right:0.5rem}
+    .l\:p3, .l\:pr3, .l\:px3 {padding-right:1rem}
+    .l\:p4, .l\:pr4, .l\:px4 {padding-right:1.75rem}
+    .l\:p5, .l\:pr5, .l\:px5 {padding-right:3rem}
+    .l\:p6, .l\:pr6, .l\:px6 {padding-right:5rem}
 
-    [l\:flex]{display: flex}
-    [l\:flex~=h] {flex-direction: row}
-    [l\:flex~=v] {flex-direction: column}
-    [l\:flex~=r] {flex-direction: row-reverse}
-    [l\:flex~=v][l\:flex~=r] {flex-direction: column-reverse}
+    .l\:h {flex-direction: row}
+    .l\:v {flex-direction: column}
+    .l\:r {flex-direction: row-reverse}
+    .l\:v.l\:r {flex-direction: column-reverse}
 
-    [l\:flex~=h][l\:flex~=h-left],
-    [l\:flex~=h][l\:flex~=r][l\:flex~=h-right],
-    [l\:flex~=v][l\:flex~=v-top],
-    [l\:flex~=v][l\:flex~=r][l\:flex~=v-bottom]
+    .l\:h.l\:h-left,
+    .l\:h.l\:r.l\:h-right,
+    .l\:v.l\:v-top,
+    .l\:v.l\:r.l\:v-bottom
     {justify-content: flex-start}
 
-    [l\:flex~=h][l\:flex~=h-right],
-    [l\:flex~=h][l\:flex~=r][l\:flex~=h-left],
-    [l\:flex~=v][l\:flex~=v-bottom],
-    [l\:flex~=v][l\:flex~=r][l\:flex~=v-top]
+    .l\:h.l\:h-right,
+    .l\:h.l\:r.l\:h-left,
+    .l\:v.l\:v-bottom,
+    .l\:v.l\:r.l\:v-top
     {justify-content: flex-end}
 
-    [l\:flex~=h][l\:flex~=h-center],
-    [l\:flex~=v][l\:flex~=v-center]
+    .l\:h.l\:h-center,
+    .l\:v.l\:v-center
     {justify-content: center}
 
-    [l\:flex~=h][l\:flex~=h-spaced],
-    [l\:flex~=v][l\:flex~=v-spaced]
+    .l\:h.l\:h-spaced,
+    .l\:v.l\:v-spaced
     {justify-content: space-between}
 
-    [l\:flex~=h][l\:flex~=v-top],
-    [l\:flex~=h][l\:flex~=r][l\:flex~=v-bottom],
-    [l\:flex~=v][l\:flex~=h-left],
-    [l\:flex~=v][l\:flex~=r][l\:flex~=h-right]
+    .l\:h.l\:v-top,
+    .l\:h.l\:r.l\:v-bottom,
+    .l\:v.l\:h-left,
+    .l\:v.l\:r.l\:h-right
     {align-items: flex-start}
 
-    [l\:flex~=h][l\:flex~=v-bottom],
-    [l\:flex~=h][l\:flex~=r][l\:flex~=v-top],
-    [l\:flex~=v][l\:flex~=h-right],
-    [l\:flex~=v][l\:flex~=r][l\:flex~=h-left]
+    .l\:h.l\:v-bottom,
+    .l\:h.l\:r.l\:v-top,
+    .l\:v.l\:h-right,
+    .l\:v.l\:r.l\:h-left
     {align-items: flex-end}
 
-    [l\:flex~=h][l\:flex~=v-center],
-    [l\:flex~=v][l\:flex~=h-center]
+    .l\:h.l\:v-center,
+    .l\:v.l\:h-center
     {align-items: center}
 
-    [l\:flex~=h][l\:flex~=v-spaced],
-    [l\:flex~=v][l\:flex~=h-spaced]
+    .l\:h.l\:v-spaced,
+    .l\:v.l\:h-spaced
     {align-items: stretch}
 
-    [l\:reset=""], [l\:reset~=row]{
+    .l\:reset, .l\:reset-row{
         --gutter-x: 0;
         --gutter-y: 0;
         display: inherit;
@@ -421,143 +418,142 @@
         justify-content: inherit;
         align-items: inherit;
     }
-    [l\:reset=""], [l\:reset~=row] > [col]{
+    .l\:reset, .l\:reset-row > .col{
         width: 100% !important;
         flex-direction: inherit;
         justify-content: inherit;
     }
-    [l\:reset=""], [l\:reset~=col]{
+    .l\:reset, .l\:reset-col{
         width: 100% !important;
         margin-left: inherit;
         order: inherit
     }
     
-    [l\:reset~=w]{width: 100% !important}
-    [l\:reset~=o]{margin-left: inherit}
-    [l\:reset~=p]{order: inherit}
-    [l\:reset~=g], [reset~=gx], [s\:reset~=gx]{--gutter-x: 0}
-    [l\:reset~=g], [reset~=gy], [s\:reset~=gy]{--gutter-y: 0}
-    [l\:reset~=c] > [col]{width: 100% !important}
-    [row][l\:reset~=r] {flex-direction: row}
-    [col][l\:reset~=r] {flex-direction: column}
+    .l\:reset-w{width: 100% !important}
+    .l\:reset-o{margin-left: inherit}
+    .l\:reset-p{order: inherit}
+    .l\:reset-g, .reset-gx, .s\:reset-gx{--gutter-x: 0}
+    .l\:reset-g, .reset-gy, .s\:reset-gy{--gutter-y: 0}
+    .l\:reset-c > .col{width: 100% !important}
+    .row.l\:reset-r {flex-direction: row}
+    .col.l\:reset-r {flex-direction: column}
 }
 @media (min-width: 1400px){
-    [xl\:hide] {display: none}
-    [xl\:show=""] {display: inherit}
-    [xl\:show~=inline] {display: inline;}
-    [xl\:show~=iblock] {display: inline-block;}
-    [xl\:show~=block] {display: block;}
-    [xl\:show~=flex] {display: flex;}
+    .xl\:hide {display: none}
+    .xl\:show {display: inherit}
+    .xl\:inline {display: inline;}
+    .xl\:iblock {display: inline-block;}
+    .xl\:block {display: block;}
+    .xl\:flex {display: flex;}
 
-    [xl\:space~=m], [xl\:space~=mt], [xl\:space~=my] {margin-top:auto}
-    [xl\:space~=m0], [xl\:space~=mt0], [xl\:space~=my0], [xl\:reset~=space], [xl\:reset~=m], [xl\:reset~=mt], [xl\:reset~=my] {margin-top:0}
-    [xl\:space~=m1], [xl\:space~=mt1], [xl\:space~=my1] {margin-top:0.25rem}
-    [xl\:space~=m2], [xl\:space~=mt2], [xl\:space~=my2] {margin-top:0.5rem}
-    [xl\:space~=m3], [xl\:space~=mt3], [xl\:space~=my3] {margin-top:1rem}
-    [xl\:space~=m4], [xl\:space~=mt4], [xl\:space~=my4] {margin-top:1.75rem}
-    [xl\:space~=m5], [xl\:space~=mt5], [xl\:space~=my5] {margin-top:3rem}
-    [xl\:space~=m6], [xl\:space~=mt6], [xl\:space~=my6] {margin-top:5rem}
-    [xl\:space~=m], [xl\:space~=mb], [xl\:space~=my] {margin-bottom:auto}
-    [xl\:space~=m0], [xl\:space~=mb0], [xl\:space~=my0], [xl\:reset~=space], [xl\:reset~=m], [xl\:reset~=mb], [xl\:reset~=my] {margin-bottom:0}
-    [xl\:space~=m1], [xl\:space~=mb1], [xl\:space~=my1] {margin-bottom:0.25rem}
-    [xl\:space~=m2], [xl\:space~=mb2], [xl\:space~=my2] {margin-bottom:0.5rem}
-    [xl\:space~=m3], [xl\:space~=mb3], [xl\:space~=my3] {margin-bottom:1rem}
-    [xl\:space~=m4], [xl\:space~=mb4], [xl\:space~=my4] {margin-bottom:1.75rem}
-    [xl\:space~=m5], [xl\:space~=mb5], [xl\:space~=my5] {margin-bottom:3rem}
-    [xl\:space~=m6], [xl\:space~=mb6], [xl\:space~=my6] {margin-bottom:5rem}
-    [xl\:space~=m], [xl\:space~=ml], [xl\:space~=mx] {margin-left:auto}
-    [xl\:space~=m0], [xl\:space~=ml0], [xl\:space~=mx0], [xl\:reset~=space], [xl\:reset~=m], [xl\:reset~=ml], [xl\:reset~=mx] {margin-left:0}
-    [xl\:space~=m1], [xl\:space~=ml1], [xl\:space~=mx1] {margin-left:0.25rem}
-    [xl\:space~=m2], [xl\:space~=ml2], [xl\:space~=mx2] {margin-left:0.5rem}
-    [xl\:space~=m3], [xl\:space~=ml3], [xl\:space~=mx3] {margin-left:1rem}
-    [xl\:space~=m4], [xl\:space~=ml4], [xl\:space~=mx4] {margin-left:1.75rem}
-    [xl\:space~=m5], [xl\:space~=ml5], [xl\:space~=mx5] {margin-left:3rem}
-    [xl\:space~=m6], [xl\:space~=ml6], [xl\:space~=mx6] {margin-left:5rem}
-    [xl\:space~=m], [xl\:space~=mr], [xl\:space~=mx] {margin-right:auto}
-    [xl\:space~=m0], [xl\:space~=mr0], [xl\:space~=mx0], [xl\:reset~=space], [xl\:reset~=m], [xl\:reset~=mr], [xl\:reset~=mx] {margin-right:0}
-    [xl\:space~=m1], [xl\:space~=mr1], [xl\:space~=mx1] {margin-right:0.25rem}
-    [xl\:space~=m2], [xl\:space~=mr2], [xl\:space~=mx2] {margin-right:0.5rem}
-    [xl\:space~=m3], [xl\:space~=mr3], [xl\:space~=mx3] {margin-right:1rem}
-    [xl\:space~=m4], [xl\:space~=mr4], [xl\:space~=mx4] {margin-right:1.75rem}
-    [xl\:space~=m5], [xl\:space~=mr5], [xl\:space~=mx5] {margin-right:3rem}
-    [xl\:space~=m6], [xl\:space~=mr6], [xl\:space~=mx6] {margin-right:5rem}
+    .xl\:m, .xl\:mt, .xl\:my {margin-top:auto}
+    .xl\:m0, .xl\:mt0, .xl\:my0, .xl\:reset-space, .xl\:reset-m, .xl\:reset-mt, .xl\:reset-my {margin-top:0}
+    .xl\:m1, .xl\:mt1, .xl\:my1 {margin-top:0.25rem}
+    .xl\:m2, .xl\:mt2, .xl\:my2 {margin-top:0.5rem}
+    .xl\:m3, .xl\:mt3, .xl\:my3 {margin-top:1rem}
+    .xl\:m4, .xl\:mt4, .xl\:my4 {margin-top:1.75rem}
+    .xl\:m5, .xl\:mt5, .xl\:my5 {margin-top:3rem}
+    .xl\:m6, .xl\:mt6, .xl\:my6 {margin-top:5rem}
+    .xl\:m, .xl\:mb, .xl\:my {margin-bottom:auto}
+    .xl\:m0, .xl\:mb0, .xl\:my0, .xl\:reset-space, .xl\:reset-m, .xl\:reset-mb, .xl\:reset-my {margin-bottom:0}
+    .xl\:m1, .xl\:mb1, .xl\:my1 {margin-bottom:0.25rem}
+    .xl\:m2, .xl\:mb2, .xl\:my2 {margin-bottom:0.5rem}
+    .xl\:m3, .xl\:mb3, .xl\:my3 {margin-bottom:1rem}
+    .xl\:m4, .xl\:mb4, .xl\:my4 {margin-bottom:1.75rem}
+    .xl\:m5, .xl\:mb5, .xl\:my5 {margin-bottom:3rem}
+    .xl\:m6, .xl\:mb6, .xl\:my6 {margin-bottom:5rem}
+    .xl\:m, .xl\:ml, .xl\:mx {margin-left:auto}
+    .xl\:m0, .xl\:ml0, .xl\:mx0, .xl\:reset-space, .xl\:reset-m, .xl\:reset-ml, .xl\:reset-mx {margin-left:0}
+    .xl\:m1, .xl\:ml1, .xl\:mx1 {margin-left:0.25rem}
+    .xl\:m2, .xl\:ml2, .xl\:mx2 {margin-left:0.5rem}
+    .xl\:m3, .xl\:ml3, .xl\:mx3 {margin-left:1rem}
+    .xl\:m4, .xl\:ml4, .xl\:mx4 {margin-left:1.75rem}
+    .xl\:m5, .xl\:ml5, .xl\:mx5 {margin-left:3rem}
+    .xl\:m6, .xl\:ml6, .xl\:mx6 {margin-left:5rem}
+    .xl\:m, .xl\:mr, .xl\:mx {margin-right:auto}
+    .xl\:m0, .xl\:mr0, .xl\:mx0, .xl\:reset-space, .xl\:reset-m, .xl\:reset-mr, .xl\:reset-mx {margin-right:0}
+    .xl\:m1, .xl\:mr1, .xl\:mx1 {margin-right:0.25rem}
+    .xl\:m2, .xl\:mr2, .xl\:mx2 {margin-right:0.5rem}
+    .xl\:m3, .xl\:mr3, .xl\:mx3 {margin-right:1rem}
+    .xl\:m4, .xl\:mr4, .xl\:mx4 {margin-right:1.75rem}
+    .xl\:m5, .xl\:mr5, .xl\:mx5 {margin-right:3rem}
+    .xl\:m6, .xl\:mr6, .xl\:mx6 {margin-right:5rem}
 
-    [xl\:space~=p0], [xl\:space~=pt0], [xl\:space~=py0], [xl\:reset~=space], [xl\:reset~=p], [xl\:reset~=pt], [xl\:reset~=py] {padding-top:0}
-    [xl\:space~=p1], [xl\:space~=pt1], [xl\:space~=py1] {padding-top:0.25rem}
-    [xl\:space~=p2], [xl\:space~=pt2], [xl\:space~=py2] {padding-top:0.5rem}
-    [xl\:space~=p3], [xl\:space~=pt3], [xl\:space~=py3] {padding-top:1rem}
-    [xl\:space~=p4], [xl\:space~=pt4], [xl\:space~=py4] {padding-top:1.75rem}
-    [xl\:space~=p5], [xl\:space~=pt5], [xl\:space~=py5] {padding-top:3rem}
-    [xl\:space~=p6], [xl\:space~=pt6], [xl\:space~=py6] {padding-top:5rem}
-    [xl\:space~=p0], [xl\:space~=pb0], [xl\:space~=py0], [xl\:reset~=space], [xl\:reset~=p], [xl\:reset~=pb], [xl\:reset~=py]{padding-bottom:0}
-    [xl\:space~=p1], [xl\:space~=pb1], [xl\:space~=py1] {padding-bottom:0.25rem}
-    [xl\:space~=p2], [xl\:space~=pb2], [xl\:space~=py2] {padding-bottom:0.5rem}
-    [xl\:space~=p3], [xl\:space~=pb3], [xl\:space~=py3] {padding-bottom:1rem}
-    [xl\:space~=p4], [xl\:space~=pb4], [xl\:space~=py4] {padding-bottom:1.75rem}
-    [xl\:space~=p5], [xl\:space~=pb5], [xl\:space~=py5] {padding-bottom:3rem}
-    [xl\:space~=p6], [xl\:space~=pb6], [xl\:space~=py6] {padding-bottom:5rem}
-    [xl\:space~=p0], [xl\:space~=pl0], [xl\:space~=px0], [xl\:reset~=space], [xl\:reset~=p], [xl\:reset~=pl], [xl\:reset~=px]{padding-left:0}
-    [xl\:space~=p1], [xl\:space~=pl1], [xl\:space~=px1] {padding-left:0.25rem}
-    [xl\:space~=p2], [xl\:space~=pl2], [xl\:space~=px2] {padding-left:0.5rem}
-    [xl\:space~=p3], [xl\:space~=pl3], [xl\:space~=px3] {padding-left:1rem}
-    [xl\:space~=p4], [xl\:space~=pl4], [xl\:space~=px4] {padding-left:1.75rem}
-    [xl\:space~=p5], [xl\:space~=pl5], [xl\:space~=px5] {padding-left:3rem}
-    [xl\:space~=p6], [xl\:space~=pl6], [xl\:space~=px6] {padding-left:5rem}
-    [xl\:space~=p0], [xl\:space~=pr0], [xl\:space~=px0], [xl\:reset~=space], [xl\:reset~=p], [xl\:reset~=pr], [xl\:reset~=px]{padding-right:0}
-    [xl\:space~=p1], [xl\:space~=pr1], [xl\:space~=px1] {padding-right:0.25rem}
-    [xl\:space~=p2], [xl\:space~=pr2], [xl\:space~=px2] {padding-right:0.5rem}
-    [xl\:space~=p3], [xl\:space~=pr3], [xl\:space~=px3] {padding-right:1rem}
-    [xl\:space~=p4], [xl\:space~=pr4], [xl\:space~=px4] {padding-right:1.75rem}
-    [xl\:space~=p5], [xl\:space~=pr5], [xl\:space~=px5] {padding-right:3rem}
-    [xl\:space~=p6], [xl\:space~=pr6], [xl\:space~=px6] {padding-right:5rem}
+    .xl\:p0, .xl\:pt0, .xl\:py0, .xl\:reset-space, .xl\:reset-p, .xl\:reset-pt, .xl\:reset-py {padding-top:0}
+    .xl\:p1, .xl\:pt1, .xl\:py1 {padding-top:0.25rem}
+    .xl\:p2, .xl\:pt2, .xl\:py2 {padding-top:0.5rem}
+    .xl\:p3, .xl\:pt3, .xl\:py3 {padding-top:1rem}
+    .xl\:p4, .xl\:pt4, .xl\:py4 {padding-top:1.75rem}
+    .xl\:p5, .xl\:pt5, .xl\:py5 {padding-top:3rem}
+    .xl\:p6, .xl\:pt6, .xl\:py6 {padding-top:5rem}
+    .xl\:p0, .xl\:pb0, .xl\:py0, .xl\:reset-space, .xl\:reset-p, .xl\:reset-pb, .xl\:reset-py{padding-bottom:0}
+    .xl\:p1, .xl\:pb1, .xl\:py1 {padding-bottom:0.25rem}
+    .xl\:p2, .xl\:pb2, .xl\:py2 {padding-bottom:0.5rem}
+    .xl\:p3, .xl\:pb3, .xl\:py3 {padding-bottom:1rem}
+    .xl\:p4, .xl\:pb4, .xl\:py4 {padding-bottom:1.75rem}
+    .xl\:p5, .xl\:pb5, .xl\:py5 {padding-bottom:3rem}
+    .xl\:p6, .xl\:pb6, .xl\:py6 {padding-bottom:5rem}
+    .xl\:p0, .xl\:pl0, .xl\:px0, .xl\:reset-space, .xl\:reset-p, .xl\:reset-pl, .xl\:reset-px{padding-left:0}
+    .xl\:p1, .xl\:pl1, .xl\:px1 {padding-left:0.25rem}
+    .xl\:p2, .xl\:pl2, .xl\:px2 {padding-left:0.5rem}
+    .xl\:p3, .xl\:pl3, .xl\:px3 {padding-left:1rem}
+    .xl\:p4, .xl\:pl4, .xl\:px4 {padding-left:1.75rem}
+    .xl\:p5, .xl\:pl5, .xl\:px5 {padding-left:3rem}
+    .xl\:p6, .xl\:pl6, .xl\:px6 {padding-left:5rem}
+    .xl\:p0, .xl\:pr0, .xl\:px0, .xl\:reset-space, .xl\:reset-p, .xl\:reset-pr, .xl\:reset-px{padding-right:0}
+    .xl\:p1, .xl\:pr1, .xl\:px1 {padding-right:0.25rem}
+    .xl\:p2, .xl\:pr2, .xl\:px2 {padding-right:0.5rem}
+    .xl\:p3, .xl\:pr3, .xl\:px3 {padding-right:1rem}
+    .xl\:p4, .xl\:pr4, .xl\:px4 {padding-right:1.75rem}
+    .xl\:p5, .xl\:pr5, .xl\:px5 {padding-right:3rem}
+    .xl\:p6, .xl\:pr6, .xl\:px6 {padding-right:5rem}
 
-    [xl\:flex]{display: flex}
-    [xl\:flex~=h] {flex-direction: row}
-    [xl\:flex~=v] {flex-direction: column}
-    [xl\:flex~=r] {flex-direction: row-reverse}
-    [xl\:flex~=v][xl\:flex~=r] {flex-direction: column-reverse}
+    .xl\:h {flex-direction: row}
+    .xl\:v {flex-direction: column}
+    .xl\:r {flex-direction: row-reverse}
+    .xl\:v.xl\:r {flex-direction: column-reverse}
 
-    [xl\:flex~=h][xl\:flex~=h-left],
-    [xl\:flex~=h][xl\:flex~=r][xl\:flex~=h-right],
-    [xl\:flex~=v][xl\:flex~=v-top],
-    [xl\:flex~=v][xl\:flex~=r][xl\:flex~=v-bottom]
+    .xl\:h.xl\:h-left,
+    .xl\:h.xl\:r.xl\:h-right,
+    .xl\:v.xl\:v-top,
+    .xl\:v.xl\:r.xl\:v-bottom
     {justify-content: flex-start}
 
-    [xl\:flex~=h][xl\:flex~=h-right],
-    [xl\:flex~=h][xl\:flex~=r][xl\:flex~=h-left],
-    [xl\:flex~=v][xl\:flex~=v-bottom],
-    [xl\:flex~=v][xl\:flex~=r][xl\:flex~=v-top]
+    .xl\:h.xl\:h-right,
+    .xl\:h.xl\:r.xl\:h-left,
+    .xl\:v.xl\:v-bottom,
+    .xl\:v.xl\:r.xl\:v-top
     {justify-content: flex-end}
 
-    [xl\:flex~=h][xl\:flex~=h-center],
-    [xl\:flex~=v][xl\:flex~=v-center]
+    .xl\:h.xl\:h-center,
+    .xl\:v.xl\:v-center
     {justify-content: center}
 
-    [xl\:flex~=h][xl\:flex~=h-spaced],
-    [xl\:flex~=v][xl\:flex~=v-spaced]
+    .xl\:h.xl\:h-spaced,
+    .xl\:v.xl\:v-spaced
     {justify-content: space-between}
 
-    [xl\:flex~=h][xl\:flex~=v-top],
-    [xl\:flex~=h][xl\:flex~=r][xl\:flex~=v-bottom],
-    [xl\:flex~=v][xl\:flex~=h-left],
-    [xl\:flex~=v][xl\:flex~=r][xl\:flex~=h-right]
+    .xl\:h.xl\:v-top,
+    .xl\:h.xl\:r.xl\:v-bottom,
+    .xl\:v.xl\:h-left,
+    .xl\:v.xl\:r.xl\:h-right
     {align-items: flex-start}
 
-    [xl\:flex~=h][xl\:flex~=v-bottom],
-    [xl\:flex~=h][xl\:flex~=r][xl\:flex~=v-top],
-    [xl\:flex~=v][xl\:flex~=h-right],
-    [xl\:flex~=v][xl\:flex~=r][xl\:flex~=h-left]
+    .xl\:h.xl\:v-bottom,
+    .xl\:h.xl\:r.xl\:v-top,
+    .xl\:v.xl\:h-right,
+    .xl\:v.xl\:r.xl\:h-left
     {align-items: flex-end}
 
-    [xl\:flex~=h][xl\:flex~=v-center],
-    [xl\:flex~=v][xl\:flex~=h-center]
+    .xl\:h.xl\:v-center,
+    .xl\:v.xl\:h-center
     {align-items: center}
 
-    [xl\:flex~=h][xl\:flex~=v-spaced],
-    [xl\:flex~=v][xl\:flex~=h-spaced]
+    .xl\:h.xl\:v-spaced,
+    .xl\:v.xl\:h-spaced
     {align-items: stretch}
 
-    [xl\:reset=""], [xl\:reset~=row]{
+    .xl\:reset, .xl\:reset-row{
         --gutter-x: 0;
         --gutter-y: 0;
         display: inherit;
@@ -565,23 +561,23 @@
         justify-content: inherit;
         align-items: inherit;
     }
-    [xl\:reset=""], [xl\:reset~=row] > [col]{
+    .xl\:reset, .xl\:reset-row > .col{
         width: 100% !important;
         flex-direction: inherit;
         justify-content: inherit;
     }
-    [xl\:reset=""], [xl\:reset~=col]{
+    .xl\:reset, .xl\:reset-col{
         width: 100% !important;
         margin-left: inherit;
         order: inherit
     }
     
-    [xl\:reset~=w]{width: 100% !important}
-    [xl\:reset~=o]{margin-left: inherit}
-    [xl\:reset~=p]{order: inherit}
-    [xl\:reset~=g], [reset~=gx], [s\:reset~=gx]{--gutter-x: 0}
-    [xl\:reset~=g], [reset~=gy], [s\:reset~=gy]{--gutter-y: 0}
-    [xl\:reset~=c] > [col]{width: 100% !important}
-    [row][xl\:reset~=r] {flex-direction: row}
-    [col][xl\:reset~=r] {flex-direction: column}
+    .xl\:reset-w{width: 100% !important}
+    .xl\:reset-o{margin-left: inherit}
+    .xl\:reset-p{order: inherit}
+    .xl\:reset-g, .reset-gx, .s\:reset-gx{--gutter-x: 0}
+    .xl\:reset-g, .reset-gy, .s\:reset-gy{--gutter-y: 0}
+    .xl\:reset-c > .col{width: 100% !important}
+    .row.xl\:reset-r {flex-direction: row}
+    .col.xl\:reset-r {flex-direction: column}
 }

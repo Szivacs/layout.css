@@ -7,7 +7,7 @@
         "example": "examples"
     },
     "scripts": {
-        "build": "node build.js src/layout.css dist/layout.min.css"
+        "build": "node build.js src/layout.css"
     },
     "keywords": [
         "css",
@@ -15,7 +15,7 @@
         "flex",
         "flexbox"
     ],
-    "author": "szivacs",
+    "author": "gergoszaszvaradi",
     "license": "ISC",
     "devDependencies": {
         "csso": "^4.0.3"

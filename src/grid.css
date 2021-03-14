@@ -1,11 +1,11 @@
-[container], [s\:container]{
+.container, .s\:container{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-[container~=fluid]{width:100% !important}
+.fluid {width:100% !important}
 
-[row], [s\:row]{
+.row, .s\:row {
     display: flex;
     flex: 1 0 100%;
     flex-wrap: wrap;
@@ -13,11 +13,11 @@
     margin-left: calc(var(--gutter-x) * -0.5);
     margin-right: calc(var(--gutter-x) * -0.5);
 }
-[row] > *, [s\:row] > *{
+.row > *, .s\:row > *{
     padding: 0 calc(var(--gutter-x) * 0.5);
     margin-top: var(--gutter-y);
 }
-[col], [s\:col]{
+.col, .s\:col{
     display: flex;
     flex-direction: column;
     flex: 1 0 0%;
@@ -25,89 +25,75 @@
     max-width: 100%;
 }
 
-[col~=w1], [s\:col~=w1] {flex: 0 0 auto; width: 8.333% !important}
-[col~=w2], [s\:col~=w2] {flex: 0 0 auto; width: 16.666% !important}
-[col~=w3], [s\:col~=w3] {flex: 0 0 auto; width: 25% !important}
-[col~=w4], [s\:col~=w4] {flex: 0 0 auto; width: 33.333% !important}
-[col~=w5], [s\:col~=w5] {flex: 0 0 auto; width: 41.666% !important}
-[col~=w6], [s\:col~=w6] {flex: 0 0 auto; width: 50% !important}
-[col~=w7], [s\:col~=w7] {flex: 0 0 auto; width: 58.333% !important}
-[col~=w8], [s\:col~=w8] {flex: 0 0 auto; width: 66.666% !important}
-[col~=w9], [s\:col~=w9] {flex: 0 0 auto; width: 75% !important}
-[col~=w10], [s\:col~=w10]{flex: 0 0 auto; width: 83.333% !important}
-[col~=w11], [s\:col~=w11]{flex: 0 0 auto; width: 91.666% !important}
-[col~=w12], [s\:col~=w12]{flex: 0 0 auto; width: 100% !important}
+.w1, .s\:w1 {flex: 0 0 auto; width: 8.333% !important}
+.w2, .s\:w2 {flex: 0 0 auto; width: 16.666% !important}
+.w3, .s\:w3 {flex: 0 0 auto; width: 25% !important}
+.w4, .s\:w4 {flex: 0 0 auto; width: 33.333% !important}
+.w5, .s\:w5 {flex: 0 0 auto; width: 41.666% !important}
+.w6, .s\:w6 {flex: 0 0 auto; width: 50% !important}
+.w7, .s\:w7 {flex: 0 0 auto; width: 58.333% !important}
+.w8, .s\:w8 {flex: 0 0 auto; width: 66.666% !important}
+.w9, .s\:w9 {flex: 0 0 auto; width: 75% !important}
+.w10, .s\:w10{flex: 0 0 auto; width: 83.333% !important}
+.w11, .s\:w11{flex: 0 0 auto; width: 91.666% !important}
+.w12, .s\:w12{flex: 0 0 auto; width: 100% !important}
 
-[col~=o1], [s\:col~=o1] {margin-left: 8.333%}
-[col~=o2], [s\:col~=o2] {margin-left: 16.666%}
-[col~=o3], [s\:col~=o3] {margin-left: 25%}
-[col~=o4], [s\:col~=o4] {margin-left: 33.333%}
-[col~=o5], [s\:col~=o5] {margin-left: 41.666%}
-[col~=o6], [s\:col~=o6] {margin-left: 50%}
-[col~=o7], [s\:col~=o7] {margin-left: 58.333%}
-[col~=o8], [s\:col~=o8] {margin-left: 66.666%}
-[col~=o9], [s\:col~=o9] {margin-left: 75%}
-[col~=o10], [s\:col~=o10]{margin-left: 83.333%}
-[col~=o11], [s\:col~=o11]{margin-left: 91.666%}
-[col~=o12], [s\:col~=o12]{margin-left: 100%}
+.o1, .s\:o1 {margin-left: 8.333%}
+.o2, .s\:o2 {margin-left: 16.666%}
+.o3, .s\:o3 {margin-left: 25%}
+.o4, .s\:o4 {margin-left: 33.333%}
+.o5, .s\:o5 {margin-left: 41.666%}
+.o6, .s\:o6 {margin-left: 50%}
+.o7, .s\:o7 {margin-left: 58.333%}
+.o8, .s\:o8 {margin-left: 66.666%}
+.o9, .s\:o9 {margin-left: 75%}
+.o10, .s\:o10{margin-left: 83.333%}
+.o11, .s\:o11{margin-left: 91.666%}
+.o12, .s\:o12{margin-left: 100%}
 
-[col~=p1], [s\:col~=p1] {order: 0}
-[col~=p2], [s\:col~=p2] {order: 1}
-[col~=p3], [s\:col~=p3] {order: 2}
-[col~=p4], [s\:col~=p4] {order: 3}
-[col~=p5], [s\:col~=p5] {order: 4}
-[col~=p6], [s\:col~=p6] {order: 5}
-[col~=p7], [s\:col~=p7] {order: 6}
-[col~=p8], [s\:col~=p8] {order: 7}
-[col~=p9], [s\:col~=p9] {order: 8}
-[col~=p10], [s\:col~=p10]{order: 9}
-[col~=p11], [s\:col~=p11]{order: 10}
-[col~=p12], [s\:col~=p12]{order: 11}
+.l1, .s\:l1 {order: 0}
+.l2, .s\:l2 {order: 1}
+.l3, .s\:l3 {order: 2}
+.l4, .s\:l4 {order: 3}
+.l5, .s\:l5 {order: 4}
+.l6, .s\:l6 {order: 5}
+.l7, .s\:l7 {order: 6}
+.l8, .s\:l8 {order: 7}
+.l9, .s\:l9 {order: 8}
+.l10, .s\:l10{order: 9}
+.l11, .s\:l11{order: 10}
+.l12, .s\:l12{order: 11}
 
-[row~=g0], [row~=gx0], [s\:row~=g0], [s\:row~=gx0]{--gutter-x: 0}
-[row~=g0], [row~=gy0], [s\:row~=g0], [s\:row~=gy0]{--gutter-y: 0}
-[row~=g1], [row~=gx1], [s\:row~=g1], [s\:row~=gx1]{--gutter-x: 0.25rem}
-[row~=g1], [row~=gy1], [s\:row~=g1], [s\:row~=gy1]{--gutter-y: 0.25rem}
-[row~=g2], [row~=gx2], [s\:row~=g2], [s\:row~=gx2]{--gutter-x: 0.5rem}
-[row~=g2], [row~=gy2], [s\:row~=g2], [s\:row~=gy2]{--gutter-y: 0.5rem}
-[row~=g3], [row~=gx3], [s\:row~=g3], [s\:row~=gx3]{--gutter-x: 1rem}
-[row~=g3], [row~=gy3], [s\:row~=g3], [s\:row~=gy3]{--gutter-y: 1rem}
-[row~=g4], [row~=gx4], [s\:row~=g4], [s\:row~=gx4]{--gutter-x: 1.75rem}
-[row~=g4], [row~=gy4], [s\:row~=g4], [s\:row~=gy4]{--gutter-y: 1.75rem}
-[row~=g5], [row~=gx5], [s\:row~=g5], [s\:row~=gx5]{--gutter-x: 3rem}
-[row~=g5], [row~=gy5], [s\:row~=g5], [s\:row~=gy5]{--gutter-y: 3rem}
-[row~=g6], [row~=gx6], [s\:row~=g6], [s\:row~=gx6]{--gutter-x: 5rem}
-[row~=g6], [row~=gy6], [s\:row~=g6], [s\:row~=gy6]{--gutter-y: 5rem}
+.g0, .gx0, .s\:g0, .s\:gx0 {--gutter-x: 0}
+.g0, .gy0, .s\:g0, .s\:gy0 {--gutter-y: 0}
+.g1, .gx1, .s\:g1, .s\:gx1 {--gutter-x: 0.25rem}
+.g1, .gy1, .s\:g1, .s\:gy1 {--gutter-y: 0.25rem}
+.g2, .gx2, .s\:g2, .s\:gx2 {--gutter-x: 0.5rem}
+.g2, .gy2, .s\:g2, .s\:gy2 {--gutter-y: 0.5rem}
+.g3, .gx3, .s\:g3, .s\:gx3 {--gutter-x: 1rem}
+.g3, .gy3, .s\:g3, .s\:gy3 {--gutter-y: 1rem}
+.g4, .gx4, .s\:g4, .s\:gx4 {--gutter-x: 1.75rem}
+.g4, .gy4, .s\:g4, .s\:gy4 {--gutter-y: 1.75rem}
+.g5, .gx5, .s\:g5, .s\:gx5 {--gutter-x: 3rem}
+.g5, .gy5, .s\:g5, .s\:gy5 {--gutter-y: 3rem}
+.g6, .gx6, .s\:g6, .s\:gx6 {--gutter-x: 5rem}
+.g6, .gy6, .s\:g6, .s\:gy6 {--gutter-y: 5rem}
 
-[row~=c1] > [col], [s\:row~=c1] > [col]{flex: 0 0 auto; width: 100%}
-[row~=c2] > [col], [s\:row~=c2] > [col]{flex: 0 0 auto; width: 50%}
-[row~=c3] > [col], [s\:row~=c3] > [col]{flex: 0 0 auto; width: 33.333%}
-[row~=c4] > [col], [s\:row~=c4] > [col]{flex: 0 0 auto; width: 25%}
-[row~=c5] > [col], [s\:row~=c5] > [col]{flex: 0 0 auto; width: 20%}
-[row~=c6] > [col], [s\:row~=c6] > [col]{flex: 0 0 auto; width: 16.666%}
-
-[row~=r], [s\:row~=r]{flex-direction: row-reverse; justify-content: left}
-[row~=left], [s\:row~=left]{justify-content: left}
-[row~=center], [s\:row~=center]{justify-content: center}
-[row~=spaced], [s\:row~=spaced]{justify-content: space-between}
-[row~=right], [s\:row~=right]{justify-content: right}
-
-[col~=r], [s\:col~=r]{flex-direction: column-reverse !important; justify-content: flex-end}
-[col~=top], [s\:col~=top]{justify-content: flex-start}
-[col~=r][col~=top], [s\:col~=r][s\:col~=top]{justify-content: flex-end}
-[col~=center], [s\:col~=center]{justify-content: center}
-[col~=stretch], [s\:col~=stretch]{justify-content: stretch}
-[col~=bottom], [s\:col~=bottom]{justify-content: flex-end}
-[col~=r][col~=bottom], [s\:col~=r][s\:col~=bottom]{justify-content: flex-start}
+.c1 > .col, .s\:c1 > .col {flex: 0 0 auto; width: 100%}
+.c2 > .col, .s\:c2 > .col {flex: 0 0 auto; width: 50%}
+.c3 > .col, .s\:c3 > .col {flex: 0 0 auto; width: 33.333%}
+.c4 > .col, .s\:c4 > .col {flex: 0 0 auto; width: 25%}
+.c5 > .col, .s\:c5 > .col {flex: 0 0 auto; width: 20%}
+.c6 > .col, .s\:c6 > .col {flex: 0 0 auto; width: 16.666%}
 
 @media (min-width: 768px){
-    [container], [s\:container], [m\:container]{
+    .container, .s\:container, .m\:container{
         width: 720px;
         margin-left: auto;
         margin-right: auto;
     }
     
-    [m\:row]{
+    .m\:row{
         display: flex;
         flex: 1 0 100%;
         flex-wrap: wrap;
@@ -115,11 +101,11 @@
         margin-left: calc(var(--gutter-x) * -0.5);
         margin-right: calc(var(--gutter-x) * -0.5);
     }
-    [m\:row] > *{
+    .m\:row > *{
         padding: 0 calc(var(--gutter-x) * 0.5);
         margin-top: var(--gutter-y);
     }
-    [m\:col]{
+    .m\:col{
         display: flex;
         flex-direction: column;
         flex: 1 0 0%;
@@ -127,90 +113,76 @@
         max-width: 100%;
     }
     
-    [m\:col~=w1] {flex: 0 0 auto; width: 8.333% !important}
-    [m\:col~=w2] {flex: 0 0 auto; width: 16.666% !important}
-    [m\:col~=w3] {flex: 0 0 auto; width: 25% !important}
-    [m\:col~=w4] {flex: 0 0 auto; width: 33.333% !important}
-    [m\:col~=w5] {flex: 0 0 auto; width: 41.666% !important}
-    [m\:col~=w6] {flex: 0 0 auto; width: 50% !important}
-    [m\:col~=w7] {flex: 0 0 auto; width: 58.333% !important}
-    [m\:col~=w8] {flex: 0 0 auto; width: 66.666% !important}
-    [m\:col~=w9] {flex: 0 0 auto; width: 75% !important}
-    [m\:col~=w10]{flex: 0 0 auto; width: 83.333% !important}
-    [m\:col~=w11]{flex: 0 0 auto; width: 91.666% !important}
-    [m\:col~=w12]{flex: 0 0 auto; width: 100% !important}
+    .m\:w1 {flex: 0 0 auto; width: 8.333% !important}
+    .m\:w2 {flex: 0 0 auto; width: 16.666% !important}
+    .m\:w3 {flex: 0 0 auto; width: 25% !important}
+    .m\:w4 {flex: 0 0 auto; width: 33.333% !important}
+    .m\:w5 {flex: 0 0 auto; width: 41.666% !important}
+    .m\:w6 {flex: 0 0 auto; width: 50% !important}
+    .m\:w7 {flex: 0 0 auto; width: 58.333% !important}
+    .m\:w8 {flex: 0 0 auto; width: 66.666% !important}
+    .m\:w9 {flex: 0 0 auto; width: 75% !important}
+    .m\:w10{flex: 0 0 auto; width: 83.333% !important}
+    .m\:w11{flex: 0 0 auto; width: 91.666% !important}
+    .m\:w12{flex: 0 0 auto; width: 100% !important}
     
-    [m\:col~=o1] {margin-left: 8.333%}
-    [m\:col~=o2] {margin-left: 16.666%}
-    [m\:col~=o3] {margin-left: 25%}
-    [m\:col~=o4] {margin-left: 33.333%}
-    [m\:col~=o5] {margin-left: 41.666%}
-    [m\:col~=o6] {margin-left: 50%}
-    [m\:col~=o7] {margin-left: 58.333%}
-    [m\:col~=o8] {margin-left: 66.666%}
-    [m\:col~=o9] {margin-left: 75%}
-    [m\:col~=o10]{margin-left: 83.333%}
-    [m\:col~=o11]{margin-left: 91.666%}
-    [m\:col~=o12]{margin-left: 100%}
+    .m\:o1 {margin-left: 8.333%}
+    .m\:o2 {margin-left: 16.666%}
+    .m\:o3 {margin-left: 25%}
+    .m\:o4 {margin-left: 33.333%}
+    .m\:o5 {margin-left: 41.666%}
+    .m\:o6 {margin-left: 50%}
+    .m\:o7 {margin-left: 58.333%}
+    .m\:o8 {margin-left: 66.666%}
+    .m\:o9 {margin-left: 75%}
+    .m\:o10{margin-left: 83.333%}
+    .m\:o11{margin-left: 91.666%}
+    .m\:o12{margin-left: 100%}
     
-    [m\:col~=p1] {order: 0}
-    [m\:col~=p2] {order: 1}
-    [m\:col~=p3] {order: 2}
-    [m\:col~=p4] {order: 3}
-    [m\:col~=p5] {order: 4}
-    [m\:col~=p6] {order: 5}
-    [m\:col~=p7] {order: 6}
-    [m\:col~=p8] {order: 7}
-    [m\:col~=p9] {order: 8}
-    [m\:col~=p10]{order: 9}
-    [m\:col~=p11]{order: 10}
-    [m\:col~=p12]{order: 11}
+    .m\:l1 {order: 0}
+    .m\:l2 {order: 1}
+    .m\:l3 {order: 2}
+    .m\:l4 {order: 3}
+    .m\:l5 {order: 4}
+    .m\:l6 {order: 5}
+    .m\:l7 {order: 6}
+    .m\:l8 {order: 7}
+    .m\:l9 {order: 8}
+    .m\:l10{order: 9}
+    .m\:l11{order: 10}
+    .m\:l12{order: 11}
     
-    [m\:row~=g0], [m\:row~=gx0]{--gutter-x: 0}
-    [m\:row~=g0], [m\:row~=gy0]{--gutter-y: 0}
-    [m\:row~=g1], [m\:row~=gx1]{--gutter-x: 0.25rem}
-    [m\:row~=g1], [m\:row~=gy1]{--gutter-y: 0.25rem}
-    [m\:row~=g2], [m\:row~=gx2]{--gutter-x: 0.5rem}
-    [m\:row~=g2], [m\:row~=gy2]{--gutter-y: 0.5rem}
-    [m\:row~=g3], [m\:row~=gx3]{--gutter-x: 1rem}
-    [m\:row~=g3], [m\:row~=gy3]{--gutter-y: 1rem}
-    [m\:row~=g4], [m\:row~=gx4]{--gutter-x: 1.75rem}
-    [m\:row~=g4], [m\:row~=gy4]{--gutter-y: 1.75rem}
-    [m\:row~=g5], [m\:row~=gx5]{--gutter-x: 3rem}
-    [m\:row~=g5], [m\:row~=gy5]{--gutter-y: 3rem}
-    [m\:row~=g6], [m\:row~=gx6]{--gutter-x: 5rem}
-    [m\:row~=g6], [m\:row~=gy6]{--gutter-y: 5rem}
+    .m\:g0, .m\:gx0{--gutter-x: 0}
+    .m\:g0, .m\:gy0{--gutter-y: 0}
+    .m\:g1, .m\:gx1{--gutter-x: 0.25rem}
+    .m\:g1, .m\:gy1{--gutter-y: 0.25rem}
+    .m\:g2, .m\:gx2{--gutter-x: 0.5rem}
+    .m\:g2, .m\:gy2{--gutter-y: 0.5rem}
+    .m\:g3, .m\:gx3{--gutter-x: 1rem}
+    .m\:g3, .m\:gy3{--gutter-y: 1rem}
+    .m\:g4, .m\:gx4{--gutter-x: 1.75rem}
+    .m\:g4, .m\:gy4{--gutter-y: 1.75rem}
+    .m\:g5, .m\:gx5{--gutter-x: 3rem}
+    .m\:g5, .m\:gy5{--gutter-y: 3rem}
+    .m\:g6, .m\:gx6{--gutter-x: 5rem}
+    .m\:g6, .m\:gy6{--gutter-y: 5rem}
     
-    [m\:row~=c1] > [col]{flex: 0 0 auto; width: 100%}
-    [m\:row~=c2] > [col]{flex: 0 0 auto; width: 50%}
-    [m\:row~=c3] > [col]{flex: 0 0 auto; width: 33.333%}
-    [m\:row~=c4] > [col]{flex: 0 0 auto; width: 25%}
-    [m\:row~=c5] > [col]{flex: 0 0 auto; width: 20%}
-    [m\:row~=c6] > [col]{flex: 0 0 auto; width: 16.666%}
-    
-    [m\:row~=r] {flex-direction: row-reverse; justify-content: left}
-    [m\:row~=left]{justify-content: left}
-    [m\:row~=center]{justify-content: center}
-    [m\:row~=spaced]{justify-content: space-between}
-    [m\:row~=right]{justify-content: right}
-    
-    [m\:col~=r] {flex-direction: column-reverse !important; justify-content: flex-end}
-    [m\:col~=top]{justify-content: flex-start}
-    [m\:col~=r][m\:col~=top]{justify-content: flex-end}
-    [m\:col~=center]{justify-content: center}
-    [m\:col~=stretch]{justify-content: stretch}
-    [m\:col~=bottom]{justify-content: flex-end}
-    [m\:col~=r][m\:col~=bottom]{justify-content: flex-start}
+    .m\:c1 > .col {flex: 0 0 auto; width: 100%}
+    .m\:c2 > .col {flex: 0 0 auto; width: 50%}
+    .m\:c3 > .col {flex: 0 0 auto; width: 33.333%}
+    .m\:c4 > .col {flex: 0 0 auto; width: 25%}
+    .m\:c5 > .col {flex: 0 0 auto; width: 20%}
+    .m\:c6 > .col {flex: 0 0 auto; width: 16.666%}
 }
 
 @media (min-width: 992px){
-    [container], [s\:container], [m\:container], [l\:container]{
+    .container, .s\:container, .m\:container, .l\:container{
         width: 960px;
         margin-left: auto;
         margin-right: auto;
     }
     
-    [l\:row]{
+    .l\:row{
         display: flex;
         flex: 1 0 100%;
         flex-wrap: wrap;
@@ -218,11 +190,11 @@
         margin-left: calc(var(--gutter-x) * -0.5);
         margin-right: calc(var(--gutter-x) * -0.5);
     }
-    [l\:row] > *{
+    .l\:row > *{
         padding: 0 calc(var(--gutter-x) * 0.5);
         margin-top: var(--gutter-y);
     }
-    [l\:col]{
+    .l\:col{
         display: flex;
         flex-direction: column;
         flex: 1 0 0%;
@@ -230,90 +202,76 @@
         max-width: 100%;
     }
     
-    [l\:col~=w1] {flex: 0 0 auto; width: 8.333% !important}
-    [l\:col~=w2] {flex: 0 0 auto; width: 16.666% !important}
-    [l\:col~=w3] {flex: 0 0 auto; width: 25% !important}
-    [l\:col~=w4] {flex: 0 0 auto; width: 33.333% !important}
-    [l\:col~=w5] {flex: 0 0 auto; width: 41.666% !important}
-    [l\:col~=w6] {flex: 0 0 auto; width: 50% !important}
-    [l\:col~=w7] {flex: 0 0 auto; width: 58.333% !important}
-    [l\:col~=w8] {flex: 0 0 auto; width: 66.666% !important}
-    [l\:col~=w9] {flex: 0 0 auto; width: 75% !important}
-    [l\:col~=w10]{flex: 0 0 auto; width: 83.333% !important}
-    [l\:col~=w11]{flex: 0 0 auto; width: 91.666% !important}
-    [l\:col~=w12]{flex: 0 0 auto; width: 100% !important}
+    .l\:w1 {flex: 0 0 auto; width: 8.333% !important}
+    .l\:w2 {flex: 0 0 auto; width: 16.666% !important}
+    .l\:w3 {flex: 0 0 auto; width: 25% !important}
+    .l\:w4 {flex: 0 0 auto; width: 33.333% !important}
+    .l\:w5 {flex: 0 0 auto; width: 41.666% !important}
+    .l\:w6 {flex: 0 0 auto; width: 50% !important}
+    .l\:w7 {flex: 0 0 auto; width: 58.333% !important}
+    .l\:w8 {flex: 0 0 auto; width: 66.666% !important}
+    .l\:w9 {flex: 0 0 auto; width: 75% !important}
+    .l\:w10{flex: 0 0 auto; width: 83.333% !important}
+    .l\:w11{flex: 0 0 auto; width: 91.666% !important}
+    .l\:w12{flex: 0 0 auto; width: 100% !important}
     
-    [l\:col~=o1] {margin-left: 8.333%}
-    [l\:col~=o2] {margin-left: 16.666%}
-    [l\:col~=o3] {margin-left: 25%}
-    [l\:col~=o4] {margin-left: 33.333%}
-    [l\:col~=o5] {margin-left: 41.666%}
-    [l\:col~=o6] {margin-left: 50%}
-    [l\:col~=o7] {margin-left: 58.333%}
-    [l\:col~=o8] {margin-left: 66.666%}
-    [l\:col~=o9] {margin-left: 75%}
-    [l\:col~=o10]{margin-left: 83.333%}
-    [l\:col~=o11]{margin-left: 91.666%}
-    [l\:col~=o12]{margin-left: 100%}
+    .l\:o1 {margin-left: 8.333%}
+    .l\:o2 {margin-left: 16.666%}
+    .l\:o3 {margin-left: 25%}
+    .l\:o4 {margin-left: 33.333%}
+    .l\:o5 {margin-left: 41.666%}
+    .l\:o6 {margin-left: 50%}
+    .l\:o7 {margin-left: 58.333%}
+    .l\:o8 {margin-left: 66.666%}
+    .l\:o9 {margin-left: 75%}
+    .l\:o10{margin-left: 83.333%}
+    .l\:o11{margin-left: 91.666%}
+    .l\:o12{margin-left: 100%}
     
-    [l\:col~=p1] {order: 0}
-    [l\:col~=p2] {order: 1}
-    [l\:col~=p3] {order: 2}
-    [l\:col~=p4] {order: 3}
-    [l\:col~=p5] {order: 4}
-    [l\:col~=p6] {order: 5}
-    [l\:col~=p7] {order: 6}
-    [l\:col~=p8] {order: 7}
-    [l\:col~=p9] {order: 8}
-    [l\:col~=p10]{order: 9}
-    [l\:col~=p11]{order: 10}
-    [l\:col~=p12]{order: 11}
+    .l\:l1 {order: 0}
+    .l\:l2 {order: 1}
+    .l\:l3 {order: 2}
+    .l\:l4 {order: 3}
+    .l\:l5 {order: 4}
+    .l\:l6 {order: 5}
+    .l\:l7 {order: 6}
+    .l\:l8 {order: 7}
+    .l\:l9 {order: 8}
+    .l\:l10{order: 9}
+    .l\:l11{order: 10}
+    .l\:l12{order: 11}
     
-    [l\:row~=g0], [l\:row~=gx0]{--gutter-x: 0}
-    [l\:row~=g0], [l\:row~=gy0]{--gutter-y: 0}
-    [l\:row~=g1], [l\:row~=gx1]{--gutter-x: 0.25rem}
-    [l\:row~=g1], [l\:row~=gy1]{--gutter-y: 0.25rem}
-    [l\:row~=g2], [l\:row~=gx2]{--gutter-x: 0.5rem}
-    [l\:row~=g2], [l\:row~=gy2]{--gutter-y: 0.5rem}
-    [l\:row~=g3], [l\:row~=gx3]{--gutter-x: 1rem}
-    [l\:row~=g3], [l\:row~=gy3]{--gutter-y: 1rem}
-    [l\:row~=g4], [l\:row~=gx4]{--gutter-x: 1.75rem}
-    [l\:row~=g4], [l\:row~=gy4]{--gutter-y: 1.75rem}
-    [l\:row~=g5], [l\:row~=gx5]{--gutter-x: 3rem}
-    [l\:row~=g5], [l\:row~=gy5]{--gutter-y: 3rem}
-    [l\:row~=g6], [l\:row~=gx6]{--gutter-x: 5rem}
-    [l\:row~=g6], [l\:row~=gy6]{--gutter-y: 5rem}
+    .l\:g0, .l\:gx0{--gutter-x: 0}
+    .l\:g0, .l\:gy0{--gutter-y: 0}
+    .l\:g1, .l\:gx1{--gutter-x: 0.25rem}
+    .l\:g1, .l\:gy1{--gutter-y: 0.25rem}
+    .l\:g2, .l\:gx2{--gutter-x: 0.5rem}
+    .l\:g2, .l\:gy2{--gutter-y: 0.5rem}
+    .l\:g3, .l\:gx3{--gutter-x: 1rem}
+    .l\:g3, .l\:gy3{--gutter-y: 1rem}
+    .l\:g4, .l\:gx4{--gutter-x: 1.75rem}
+    .l\:g4, .l\:gy4{--gutter-y: 1.75rem}
+    .l\:g5, .l\:gx5{--gutter-x: 3rem}
+    .l\:g5, .l\:gy5{--gutter-y: 3rem}
+    .l\:g6, .l\:gx6{--gutter-x: 5rem}
+    .l\:g6, .l\:gy6{--gutter-y: 5rem}
     
-    [l\:row~=c1] > [col]{flex: 0 0 auto; width: 100%}
-    [l\:row~=c2] > [col]{flex: 0 0 auto; width: 50%}
-    [l\:row~=c3] > [col]{flex: 0 0 auto; width: 33.333%}
-    [l\:row~=c4] > [col]{flex: 0 0 auto; width: 25%}
-    [l\:row~=c5] > [col]{flex: 0 0 auto; width: 20%}
-    [l\:row~=c6] > [col]{flex: 0 0 auto; width: 16.666%}
-    
-    [l\:row~=r] {flex-direction: row-reverse; justify-content: left}
-    [l\:row~=left]{justify-content: left}
-    [l\:row~=center]{justify-content: center}
-    [l\:row~=spaced]{justify-content: space-between}
-    [l\:row~=right]{justify-content: right}
-    
-    [l\:col~=r] {flex-direction: column-reverse !important; justify-content: flex-end}
-    [l\:col~=top]{justify-content: flex-start}
-    [l\:col~=r][l\:col~=top]{justify-content: flex-end}
-    [l\:col~=center]{justify-content: center}
-    [l\:col~=stretch]{justify-content: stretch}
-    [l\:col~=bottom]{justify-content: flex-end}
-    [l\:col~=r][l\:col~=bottom]{justify-content: flex-start}
+    .l\:c1 > .col {flex: 0 0 auto; width: 100%}
+    .l\:c2 > .col {flex: 0 0 auto; width: 50%}
+    .l\:c3 > .col {flex: 0 0 auto; width: 33.333%}
+    .l\:c4 > .col {flex: 0 0 auto; width: 25%}
+    .l\:c5 > .col {flex: 0 0 auto; width: 20%}
+    .l\:c6 > .col {flex: 0 0 auto; width: 16.666%}
 }
 
 @media (min-width: 1400px){
-    [container], [s\:container], [m\:container], [l\:container], [xl\:container]{
+    .container, .s\:container, .m\:container, .l\:container, .xl\:container{
         width: 1320px;
         margin-left: auto;
         margin-right: auto;
     }
     
-    [xl\:row]{
+    .xl\:row{
         display: flex;
         flex: 1 0 100%;
         flex-wrap: wrap;
@@ -321,11 +279,11 @@
         margin-left: calc(var(--gutter-x) * -0.5);
         margin-right: calc(var(--gutter-x) * -0.5);
     }
-    [xl\:row] > *{
+    .xl\:row > *{
         padding: 0 calc(var(--gutter-x) * 0.5);
         margin-top: var(--gutter-y);
     }
-    [xl\:col]{
+    .xl\:col{
         display: flex;
         flex-direction: column;
         flex: 1 0 0%;
@@ -333,78 +291,64 @@
         max-width: 100%;
     }
     
-    [xl\:col~=w1] {flex: 0 0 auto; width: 8.333% !important}
-    [xl\:col~=w2] {flex: 0 0 auto; width: 16.666% !important}
-    [xl\:col~=w3] {flex: 0 0 auto; width: 25% !important}
-    [xl\:col~=w4] {flex: 0 0 auto; width: 33.333% !important}
-    [xl\:col~=w5] {flex: 0 0 auto; width: 41.666% !important}
-    [xl\:col~=w6] {flex: 0 0 auto; width: 50% !important}
-    [xl\:col~=w7] {flex: 0 0 auto; width: 58.333% !important}
-    [xl\:col~=w8] {flex: 0 0 auto; width: 66.666% !important}
-    [xl\:col~=w9] {flex: 0 0 auto; width: 75% !important}
-    [xl\:col~=w10]{flex: 0 0 auto; width: 83.333% !important}
-    [xl\:col~=w11]{flex: 0 0 auto; width: 91.666% !important}
-    [xl\:col~=w12]{flex: 0 0 auto; width: 100% !important}
+    .xl\:w1 {flex: 0 0 auto; width: 8.333% !important}
+    .xl\:w2 {flex: 0 0 auto; width: 16.666% !important}
+    .xl\:w3 {flex: 0 0 auto; width: 25% !important}
+    .xl\:w4 {flex: 0 0 auto; width: 33.333% !important}
+    .xl\:w5 {flex: 0 0 auto; width: 41.666% !important}
+    .xl\:w6 {flex: 0 0 auto; width: 50% !important}
+    .xl\:w7 {flex: 0 0 auto; width: 58.333% !important}
+    .xl\:w8 {flex: 0 0 auto; width: 66.666% !important}
+    .xl\:w9 {flex: 0 0 auto; width: 75% !important}
+    .xl\:w10{flex: 0 0 auto; width: 83.333% !important}
+    .xl\:w11{flex: 0 0 auto; width: 91.666% !important}
+    .xl\:w12{flex: 0 0 auto; width: 100% !important}
     
-    [xl\:col~=o1] {margin-left: 8.333%}
-    [xl\:col~=o2] {margin-left: 16.666%}
-    [xl\:col~=o3] {margin-left: 25%}
-    [xl\:col~=o4] {margin-left: 33.333%}
-    [xl\:col~=o5] {margin-left: 41.666%}
-    [xl\:col~=o6] {margin-left: 50%}
-    [xl\:col~=o7] {margin-left: 58.333%}
-    [xl\:col~=o8] {margin-left: 66.666%}
-    [xl\:col~=o9] {margin-left: 75%}
-    [xl\:col~=o10]{margin-left: 83.333%}
-    [xl\:col~=o11]{margin-left: 91.666%}
-    [xl\:col~=o12]{margin-left: 100%}
+    .xl\:o1 {margin-left: 8.333%}
+    .xl\:o2 {margin-left: 16.666%}
+    .xl\:o3 {margin-left: 25%}
+    .xl\:o4 {margin-left: 33.333%}
+    .xl\:o5 {margin-left: 41.666%}
+    .xl\:o6 {margin-left: 50%}
+    .xl\:o7 {margin-left: 58.333%}
+    .xl\:o8 {margin-left: 66.666%}
+    .xl\:o9 {margin-left: 75%}
+    .xl\:o10{margin-left: 83.333%}
+    .xl\:o11{margin-left: 91.666%}
+    .xl\:o12{margin-left: 100%}
     
-    [xl\:col~=p1] {order: 0}
-    [xl\:col~=p2] {order: 1}
-    [xl\:col~=p3] {order: 2}
-    [xl\:col~=p4] {order: 3}
-    [xl\:col~=p5] {order: 4}
-    [xl\:col~=p6] {order: 5}
-    [xl\:col~=p7] {order: 6}
-    [xl\:col~=p8] {order: 7}
-    [xl\:col~=p9] {order: 8}
-    [xl\:col~=p10]{order: 9}
-    [xl\:col~=p11]{order: 10}
-    [xl\:col~=p12]{order: 11}
+    .xl\:l1 {order: 0}
+    .xl\:l2 {order: 1}
+    .xl\:l3 {order: 2}
+    .xl\:l4 {order: 3}
+    .xl\:l5 {order: 4}
+    .xl\:l6 {order: 5}
+    .xl\:l7 {order: 6}
+    .xl\:l8 {order: 7}
+    .xl\:l9 {order: 8}
+    .xl\:l10{order: 9}
+    .xl\:l11{order: 10}
+    .xl\:l12{order: 11}
     
-    [xl\:row~=g0], [xl\:row~=gx0]{--gutter-x: 0}
-    [xl\:row~=g0], [xl\:row~=gy0]{--gutter-y: 0}
-    [xl\:row~=g1], [xl\:row~=gx1]{--gutter-x: 0.25rem}
-    [xl\:row~=g1], [xl\:row~=gy1]{--gutter-y: 0.25rem}
-    [xl\:row~=g2], [xl\:row~=gx2]{--gutter-x: 0.5rem}
-    [xl\:row~=g2], [xl\:row~=gy2]{--gutter-y: 0.5rem}
-    [xl\:row~=g3], [xl\:row~=gx3]{--gutter-x: 1rem}
-    [xl\:row~=g3], [xl\:row~=gy3]{--gutter-y: 1rem}
-    [xl\:row~=g4], [xl\:row~=gx4]{--gutter-x: 1.75rem}
-    [xl\:row~=g4], [xl\:row~=gy4]{--gutter-y: 1.75rem}
-    [xl\:row~=g5], [xl\:row~=gx5]{--gutter-x: 3rem}
-    [xl\:row~=g5], [xl\:row~=gy5]{--gutter-y: 3rem}
-    [xl\:row~=g6], [xl\:row~=gx6]{--gutter-x: 5rem}
-    [xl\:row~=g6], [xl\:row~=gy6]{--gutter-y: 5rem}
+    .xl\:g0, .xl\:gx0{--gutter-x: 0}
+    .xl\:g0, .xl\:gy0{--gutter-y: 0}
+    .xl\:g1, .xl\:gx1{--gutter-x: 0.25rem}
+    .xl\:g1, .xl\:gy1{--gutter-y: 0.25rem}
+    .xl\:g2, .xl\:gx2{--gutter-x: 0.5rem}
+    .xl\:g2, .xl\:gy2{--gutter-y: 0.5rem}
+    .xl\:g3, .xl\:gx3{--gutter-x: 1rem}
+    .xl\:g3, .xl\:gy3{--gutter-y: 1rem}
+    .xl\:g4, .xl\:gx4{--gutter-x: 1.75rem}
+    .xl\:g4, .xl\:gy4{--gutter-y: 1.75rem}
+    .xl\:g5, .xl\:gx5{--gutter-x: 3rem}
+    .xl\:g5, .xl\:gy5{--gutter-y: 3rem}
+    .xl\:g6, .xl\:gx6{--gutter-x: 5rem}
+    .xl\:g6, .xl\:gy6{--gutter-y: 5rem}
     
-    [xl\:row~=c1] > [col]{flex: 0 0 auto; width: 100%}
-    [xl\:row~=c2] > [col]{flex: 0 0 auto; width: 50%}
-    [xl\:row~=c3] > [col]{flex: 0 0 auto; width: 33.333%}
-    [xl\:row~=c4] > [col]{flex: 0 0 auto; width: 25%}
-    [xl\:row~=c5] > [col]{flex: 0 0 auto; width: 20%}
-    [xl\:row~=c6] > [col]{flex: 0 0 auto; width: 16.666%}
-    
-    [xl\:row~=r] {flex-direction: row-reverse; justify-content: left}
-    [xl\:row~=left]{justify-content: left}
-    [xl\:row~=center]{justify-content: center}
-    [xl\:row~=spaced]{justify-content: space-between}
-    [xl\:row~=right]{justify-content: right}
-    
-    [xl\:col~=r] {flex-direction: column-reverse !important; justify-content: flex-end}
-    [xl\:col~=top]{justify-content: flex-start}
-    [xl\:col~=r][xl\:col~=top]{justify-content: flex-end}
-    [xl\:col~=center]{justify-content: center}
-    [xl\:col~=stretch]{justify-content: stretch}
-    [xl\:col~=bottom]{justify-content: flex-end}
-    [xl\:col~=r][xl\:col~=bottom]{justify-content: flex-start}
+    .xl\:c1 > .col {flex: 0 0 auto; width: 100%}
+    .xl\:c2 > .col {flex: 0 0 auto; width: 50%}
+    .xl\:c3 > .col {flex: 0 0 auto; width: 33.333%}
+    .xl\:c4 > .col {flex: 0 0 auto; width: 25%}
+    .xl\:c5 > .col {flex: 0 0 auto; width: 20%}
+    .xl\:c6 > .col {flex: 0 0 auto; width: 16.666%}
 }

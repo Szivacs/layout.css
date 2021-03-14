@@ -1,0 +1,5 @@
+/*!
+* layout.css
+* Copyright 2020-2021 Gergo Szasz-Varadi
+* Licensed under MIT (https://github.com/gergoszaszvaradi/layout.css/blob/master/LICENCE)
+*/*{margin:0;padding:0;box-sizing:border-box}html{line-height:1.5rem;-webkit-text-size-adjust:100%}body{overflow-x:hidden}main{display:block}a{background-color:transparent}img{border-style:none;vertical-align:baseline}ol,ul{margin-left:1.5em}textarea{overflow:auto}

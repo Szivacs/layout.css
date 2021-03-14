@@ -2,40 +2,62 @@ const fs = require('fs');
 const path = require('path');
 const csso = require('csso');
 
-process.argv.splice(0, 2);
+const LICENCE = `/*!
+* layout.css
+* Copyright 2020-2021 Gergo Szasz-Varadi
+* Licensed under MIT (https://github.com/gergoszaszvaradi/layout.css/blob/master/LICENSE)
+*/`;
 
-if(process.argv.length < 2){
-    console.error("Invalid argument list!\nUsage: node build.js [input] [output]");
+process.argv.splice(0, 2);
+if(process.argv.length < 1){
+    console.error("Invalid argument list!\nUsage: node build.js [input]");
     return;
 }
 
-console.log(`Building ${process.argv[0]} ...`);
+const INPUT_FILE = process.argv[0];
+const INPUT_DIR = path.dirname(INPUT_FILE);
+const OUTPUT_DIR = "./dist";
+
+console.log(`Building project ...`);
 let start = Date.now();
 
-let inDir = path.dirname(process.argv[0]);
-let outDir = path.dirname(process.argv[1]);
-let content = fs.readFileSync(process.argv[0]).toString();
-let css = "";
+let inputContent = fs.readFileSync(INPUT_FILE).toString();
+
+let inputFiles = [];
+let fullCss = "";
+
 while(true){
-    let match = content.match(/@import "(.*)";?/);
+    let match = inputContent.match(/@import "(.*)";?/);
     if(match == null) break;
 
     console.log(`Found import for ${match[1]}. Appending ...`);
-    css += fs.readFileSync(path.join(inDir, match[1])).toString();
-    content = content.substring(match.index + match[0].length, content.length);
+    let importPath = path.join(INPUT_DIR, match[1]);
+    let importContent = fs.readFileSync(importPath).toString();
+    inputFiles.push({path: importPath, src: importContent});
+    fullCss += importContent;
+    inputContent = inputContent.substring(match.index + match[0].length, inputContent.length);
 }
-console.log("Minifying css ...")
-let result = csso.minify(css, {
-    forceMediaMerge: true,
-    sourceMap: true
-});
+inputFiles.push({path: INPUT_FILE, src: fullCss});
 
-if(fs.existsSync(outDir) == false){
-    fs.mkdirSync(outDir, {recursive: true});
+console.log("Minifying css ...")
+if(fs.existsSync(OUTPUT_DIR) == false){
+    fs.mkdirSync(OUTPUT_DIR, {recursive: true});
 }
-console.log(`Writing minified css to ${process.argv[1]} ...`);
-fs.writeFileSync(process.argv[1], result.css);
-if(result.map != null)
-    fs.writeFileSync(process.argv[1] + ".map", result.map.toString());
+
+for(let file of inputFiles) {
+    let result = csso.minify(file.src, {
+        forceMediaMerge: true,
+        sourceMap: true
+    });
+
+    let outputCssPath = path.join(OUTPUT_DIR, path.basename(file.path).replace(/\.[^\/.]+$/, "") + ".min.css");
+    let outputMapPath = outputCssPath + ".map";
+
+    console.log(`Writing minified css to ${outputCssPath} ...`);
+    fs.writeFileSync(outputCssPath, LICENCE + result.css);
+    if(result.map != null)
+        fs.writeFileSync(outputMapPath, result.map.toString());
+}
+
 let end = Date.now();
-console.log(`Done in ${end - start}ms. Final file size: ${fs.statSync(process.argv[1]).size} bytes.`);
+console.log(`Done in ${end - start}ms.`);
